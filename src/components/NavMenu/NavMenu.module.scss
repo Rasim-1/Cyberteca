@@ -1,0 +1,34 @@
+
+.menu {
+    display: flex;
+    writing-mode: vertical-rl;
+    width: max-content;
+    justify-content: space-around;
+    // padding-top: 80px;
+    top: 10%;
+    gap: 20px;
+    // bottom: 75%;
+    // padding-bottom: 100px;
+    position: fixed;
+    z-index: 3;
+
+    a {
+        margin: 20px;
+        font-size: 20px;
+        color: gray;
+        border: none;
+        text-decoration: none;
+        width: max-content;
+        transition: 0.7s !important;
+        @media (max-width: 600px) {
+            font-size: 15px;
+            margin: 15px;
+        }
+        &:hover {
+            color: white;
+        }
+     
+
+        
+    }
+}

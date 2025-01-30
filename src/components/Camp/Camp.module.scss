@@ -1,0 +1,109 @@
+.camp {
+    background-image: url(/camp.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+  
+
+    background-color: #1f1f1f;
+    padding-top: 80px;
+    padding-bottom: 70px;
+    padding-left: 50px;
+    @media (max-width:1400px) {
+        padding: 70px;
+    }
+}
+
+.wrap {
+    font-weight: 900;
+    font-size: 90px;
+    text-transform: uppercase;
+    color: #fff;
+    
+    @media (max-width:950px) {
+        font-weight: 900px;
+        font-size: 3em;
+    }
+    @media (max-width:550px) {
+        font-weight: 900px;
+        font-size: 2em;
+    }
+}
+
+.box{
+    border: 3px solid rgba(255, 255, 255, 0.05);
+border-radius: 5px;
+    padding-top: -15px;
+
+}
+
+.har {
+    font-weight: 600;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+    @media (max-width:950px) {
+        font-weight: 600px;
+        font-size: 2em;
+    }
+    @media (max-width:550px) {
+        font-weight: 600px;
+        font-size: 1.5em;
+    }
+}
+
+.cards{
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    flex-wrap: wrap;
+    @media (max-width: 600px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      //   display: flex;
+        gap: 15px;
+      }
+      @media (max-width: 500px) {
+        display: flex;
+      }
+}
+
+.card {
+    padding:  10px;
+    text-align: center;
+    color: white;
+    background-color: #1f1f1f;
+    // width: max-content;
+    border-radius: 15px;
+width: 171px;
+height: 205px;
+    
+}
+
+.text2 {
+
+    font-weight: 400;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    font-size: 12px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.text1 {
+    padding-top: 15px;
+}
+
+
+  
+.image{
+    padding: 19px;
+}
+
+
+

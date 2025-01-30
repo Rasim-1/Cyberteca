@@ -1,0 +1,155 @@
+.karta2 {
+    background-image: url(/backgroundPs5.png);
+    background-color: #1a1a1a;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    // margin-bottom: 20px;
+  }
+  
+  .wrapp{
+    padding: 10px;
+    
+}
+.h1 {
+    font-weight: 900;
+    font-size: 90px;
+    text-transform: uppercase;
+    color: #fff;
+
+    @media (max-width:950px) {
+        font-weight: 900px;
+        font-size: 3em;
+    }
+    @media (max-width:550px) {
+        font-weight: 900px;
+        font-size: 2em;
+    }
+}
+
+.box {
+    padding-top: 70px;
+    position: relative;
+
+
+    img {
+
+        &:nth-child(1) {
+            width: 100%;
+        }
+
+    }
+
+
+    div {
+        img {
+            &:nth-child(1) {
+                width: 60px;
+
+                position: absolute;
+                top: 280px;
+                left: 80px;
+                z-index: 2;
+
+                cursor: pointer;
+
+            }
+
+            // &:nth-child(2) {
+            //     display: none;
+            //     position: absolute;
+            //     top: 0;
+            //     left: 0;
+            // }
+          }
+    }
+}
+
+.card {
+    padding-top: 150px;
+    padding-bottom: 70px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr ;
+    gap: 5px 5px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "card1 card1 card1 card3 card3 card3 ."
+      "card1 card1 card1 card3 card3 card3 ."
+      ". card2 card2 card2 card4 card4 card4"
+      ". card2 card2 card2 card4 card4 card4"
+      ". . . . . . ."
+      ". . . . . . .";
+
+      @media (max-width:1400px) {
+
+         
+        display: grid; 
+        grid-template-columns: 1fr 1fr 1fr; 
+
+        gap: 20px; 
+        grid-template-areas: 
+          "card1 card1 ."
+         
+          ". card2 card2"
+        
+          "card3 card3 ."
+ 
+          ". card4 card4"; 
+      
+  }
+
+  @media (max-width:1000px){
+    display: flex;
+    flex-wrap: wrap;
+    
+  }
+  
+    .cardContent {
+      position: relative;
+      text-align: center;
+      img {
+        width: 100%;
+        object-fit: cover;
+        height: 451px;
+        border: 2px solid rgb(44, 41, 41);
+        border-radius: 5px;
+      }
+      p {
+        position: absolute;
+        bottom: 20px;
+        left: 30%;
+        transform: translateX(-50%);
+        // background-color: rgba(0, 0, 0, 0.6);
+        color: rgba(255, 255, 255, 0.515);
+        font-size: 30px;
+        font-weight: bold;
+        padding: 5px 10px;
+        border-radius: 5px;
+        white-space: nowrap;
+      }
+    }
+  }
+  
+  .card1 {
+    grid-area: card1;
+  }
+  
+  .card2 {
+    grid-area: card2;
+  }
+  
+  .card3 {
+    grid-area: card3;
+  }
+  
+  .card4 {
+    grid-area: card4;
+  }
+  
+  
+  

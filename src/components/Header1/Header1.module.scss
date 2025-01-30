@@ -1,0 +1,114 @@
+.header {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    background-image: url('/HeaderLogo2.jpg');
+}
+
+.wrapper {   
+    position: absolute;
+    top: 25%;
+    right: 90deg;
+
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+}
+
+
+.box {
+
+    display: flex;
+    flex-direction: column;
+    margin-left: 80px;
+    @media (max-width: 600px) {
+      margin-left: 20px;
+    }
+}
+
+.box__logo {
+    display: flex;
+
+    // flex-direction: column;
+    max-width: 300px;
+    gap: 20px;
+    margin-bottom: 20px;
+    // text-align: center;x
+    align-items: start;
+
+    h1 {
+        color: white;
+        width: max-content;
+        font-size: 30px;
+        display: flex;
+        flex-direction: column;
+        @media (max-width: 550px) {
+          font-size: 20px;
+
+        }
+    }
+    Span {
+        font-style: italic;
+        font-weight: 800;
+        font-size: 50px;
+        @media (max-width: 550px) {
+          font-size: 40px;
+          font-weight: 600;
+        }
+    }
+
+}
+
+.logo {
+    width: 100px;
+    @media (max-width: 550px) {
+      display: none
+          }
+      
+
+}
+
+
+.map {
+    display: flex;
+    // align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+
+    p {
+        color: white;
+        font-size: 20px;
+        @media (max-width: 550px) {
+        font-size: 16px;
+      }
+    }
+
+}
+
+.btn {
+
+    width: max-content;
+    padding: 10px 45px;
+    color: gray;
+    background-color: white;
+    border-radius: 10px;
+    transition: 1s;
+    border: 1px solid white;
+    @media (max-width: 550px) {
+      padding: 5px 25px;
+      
+    }
+}
+
+// @keyframes anim-robot {
+//     0% {
+//         background-image: url();
+//     }
+//     100% {
+//         background-image: url();
+//     }
+// }

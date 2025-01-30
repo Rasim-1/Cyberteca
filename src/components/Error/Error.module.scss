@@ -1,0 +1,45 @@
+.error404{
+    background-image: url(/background404.png);
+    background-color: #0E0E0E;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100dvh;
+    width: 100%;
+    display: flex;
+    place-items: center;
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    @media (max-width: 1200px) {
+      grid-template-columns: 1fr;
+    }
+}
+.error{
+    display: flex;
+    flex-direction: column;
+gap: 15px;
+@media (max-width: 1200px) {
+  padding-left: 100px;
+}
+@media (max-width: 500px) {
+  padding-left: 0;
+}
+img{
+    width: 100%;
+}
+}
+
+h3{
+    color: #FFFFFF;
+    font-size: 32px;
+    @media (max-width: 800px) {
+      font-size: 16px;
+    }
+}
+p{
+color: gray;
+}

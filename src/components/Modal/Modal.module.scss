@@ -1,0 +1,103 @@
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal {
+    animation: changeBorderColor 10s infinite;
+    background-color: lightgray;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 400px;
+    width: 90%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .closeButton {
+    position: absolute;
+    top: 10px;
+    left: 410px; /* Размещение в левом верхнем углу */
+    background: none; /* Убираем фон */
+    border: none; /* Убираем рамку */
+    font-size: 24px; /* Увеличиваем размер шрифта для крестика */
+    color: #333; /* Цвет крестика */
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.2s ease; /* Анимация для наведения */
+    @media (max-width: 500px) {
+      left: 370px;
+    }
+    @media (max-width: 400px) {
+      left: 340px;
+    }
+  }
+  
+  .closeButton:hover {
+    color: #e73ab8; /* Меняем цвет крестика при наведении */
+    transform: scale(1.1); /* Легкое увеличение при наведении */
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    gap: 30px;
+    padding-bottom: 40px;
+    input {
+      width: 75%;
+      border: none;
+      border-radius: 7px;
+      padding: 15px 35px;
+      background-color: #030303;
+      color: white;
+    }
+  }
+  
+  
+  .btn {
+    width: max-content;
+    padding: 10px 50px;
+    color: gray;
+    background-color: white;
+    border-radius: 10px;
+    transition: 1s;
+    border: 1px solid white;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    color: #e73ab8;
+    border: 1px solid #e73ab8;
+    box-shadow: 0 0 10px 0 #e73ab8;
+  }
+  
+  @keyframes changeBorderColor {
+    0% {
+      border-color: #e73ab8;
+      box-shadow: 0 0 10px 0 #e73ab8;
+      color: #e73ab8;
+    }
+  
+    50% {
+      border-color: #149ef2;
+      color: #149ef2;
+      box-shadow: 0 0 10px 0 #149ef2;
+    }
+  
+    100% {
+      border-color: #e73ab8;
+      box-shadow: 0 0 10px 0 #e73ab8;
+      color: #e73ab8;
+    }
+  }
+  

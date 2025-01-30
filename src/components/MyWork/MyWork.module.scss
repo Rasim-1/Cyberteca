@@ -1,0 +1,100 @@
+.maps {
+    background-image: url(/fonmap.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100dvh;
+    width: 100%;
+    display: flex;
+ 
+
+    background-color: #1f1f1f;
+    place-items: center;
+
+
+    .container {
+
+        @media (max-width: 600px) {
+            max-width: 100%;
+            padding: 0;
+            width: 100%;
+        }
+    }
+
+    p {
+        color: white;
+    }
+
+    span {
+        color: gray;
+    }
+
+    .map {
+        display: flex;
+        flex-direction: column;
+        border-radius: 40px;
+        padding: 40px;
+        background-color: black;
+        max-width: 550px;
+        margin: 20px;
+
+        h3 {
+            color: white;
+            font-size: 35px;
+        }
+    }
+}
+
+.wrap {
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    width: 100%;
+
+    @media(max-width: 1100px) {
+        display: flex;
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+}
+
+.text {
+    max-width: 300px;
+}
+
+.metro {
+    div {
+        margin-top: 25px;
+    }
+}
+
+
+
+.btn {
+    max-width: 400px;
+    display: flex;
+    justify-content: space-between;
+    button {
+    padding: 10px 25px;
+    border-radius: 10px;
+    color: gray;
+   border: 1px solid white;
+    font-size: 20px;
+    transition: 1s;
+}
+}
+
+.karta iframe {
+    border-radius: 40px;
+    overflow: hidden;
+
+
+    @media (max-width: 600px) {
+        border-radius: 0;
+        height: 400px;
+    }
+}

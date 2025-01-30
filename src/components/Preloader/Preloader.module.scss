@@ -1,0 +1,78 @@
+.Preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  min-height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000; /* Черный фон */
+  background-image: url("gif.gif");
+  // background-image: url('https://c.tenor.com/xmEBvpclwvgAAAAC/tenor.gif');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  z-index: 100;
+}
+
+.container {
+  text-align: center;
+}
+
+.logoText {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: white;
+  
+  // rotate: 5deg;
+}
+
+.loader {
+  display: flex;
+  justify-content: space-between;
+  width: 360px; /* Увеличиваем ширину контейнера для большего количества палочек */
+  align-items: flex-end; /* Размещаем палочки у основания */
+}
+
+.bar {
+  width: 6px; /* Ширина палочек */
+  height: 20px; /* Начальная высота палочек */
+  background-color: #E73AB8; /* Белый цвет палочек */
+  opacity: 0;
+  transform: rotate(10deg); /* Легкий наклон палочек */
+  animation: barAnimation 1s forwards;
+  transition: box-shadow 0.5s ease, transform 0.5s ease; /* Плавное добавление box-shadow */
+}
+
+@keyframes barAnimation {
+  0% {
+    opacity: 0;
+    transform: rotate(10deg) scaleY(0); /* Начальный наклон и масштаб */
+  }
+  50% {
+    opacity: 1;
+    transform: rotate(10deg) scaleY(0.8); /* Палочки увеличиваются */
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(10deg) scaleY(1); /* Палочки становятся нормальными */
+  }
+}
+
+
+
+.progress {
+  margin-top: 10px;
+  font-size: 26px;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+}
+
+
+// .complete {
+//   // transform: rotate(10deg) scaleY(1.2); /* Палочки увеличиваются по завершению */
+//   // animation: moveUpAndDown 0.5s ease-in-out forwards, glowEffect 1s 3; /* Анимация подъема и мерцания */
+// }

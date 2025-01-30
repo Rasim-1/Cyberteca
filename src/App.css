@@ -1,0 +1,404 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+
+*{
+  padding: 0;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+.container{
+  margin: 0 auto;
+padding: 0 15px;
+max-width: 1400px;
+
+}
+
+.img{
+  background-image: url(/HeaderLogo2.jpg);
+  
+}
+.img2{
+  background-image: url(/HeaderLogo1.png);
+
+
+}
+.color1{
+    
+  &:hover {
+      color: #E73AB8;
+      border: 1px solid #E73AB8;
+      box-shadow: 0 0 10px 0 #E73AB8;
+  }
+
+}
+.color2{
+    
+  &:hover {
+      color: #149EF2;
+      border: 1px solid #149EF2;
+      box-shadow: 0 0 10px 0 #149EF2;
+  }
+
+}
+
+.swiper-slide-next {
+ 
+filter: brightness(10%) !important;
+
+}
+
+.swiper-slide-prev{
+
+filter: brightness(10%) !important;
+
+}
+.swiper-slide{
+  transition: 1s !important;
+}
+
+
+
+.swiper {
+  padding-bottom: 50px !important;
+}
+
+
+
+
+
+
+.color19{
+  color: rgba(255, 255, 255, 0.3) !important;
+}
+.color20{
+  color: rgba(255, 152, 216, 0.5) !important;
+}
+.color3{
+  color: rgba(255, 114, 201, 0.6) !important;
+}
+.color4{
+  color: rgba(255, 76, 187, 0.7) !important;
+}
+.color5{
+  color: rgba(255, 38, 172, 0.8) !important;
+}
+.color6{
+  color: #e637b7 !important;
+}
+
+.color7{
+  color: #A8DEFF !important;
+}
+.color8{
+  color: rgba(126, 207, 255, 0.6) !important;
+}
+.color9{
+  color: rgba(84, 191, 255, 0.7) !important;
+}
+.color10{
+  color: rgba(42, 175, 255, 0.8) !important;
+}
+.color11{
+  color: #019fff !important;
+}
+.color12{
+  color: #A8DEFF !important;
+}
+.color13{
+  color: #FF97B0 !important;
+}
+.color14{
+  color: #FF7193 !important;
+}
+.color15{
+  color: #FF4C77 !important;
+}
+.color16{
+  color: #FF265A !important;
+}
+.color17{
+  color: #FF013E !important;
+}
+.color18{
+  color: #A8DEFF !important;
+}
+
+
+
+
+.border4{
+  border: 3px solid #e637b7 ;
+  transition: 1.5s;
+
+  &:hover {
+    border: 3px solid rgba(255, 255, 255, 0.05); 
+  }
+ 
+}
+.border3{
+border:3px solid #ee66c2 ;
+transition: 1.5s;
+
+  &:hover {
+    border: 3px solid rgba(255, 255, 255, 0.05); 
+  }
+}
+.border2{
+border:3px solid #f592d0 ;
+transition: 1.5s;
+
+  &:hover {
+    border: 3px solid rgba(255, 255, 255, 0.05); 
+  }
+}
+.border1 {
+  border:3px solid #f7afdc;
+  /* border-image: linear-gradient(to right, #ff8ec7, #ffffff, #ff8ec7) 1; */
+  transition: 1.5s;
+
+  &:hover {
+    border: 3px solid rgba(255, 255, 255, 0.05); 
+  }
+}
+
+.border5{
+border:3px solid #c22fa0 ;
+transition: 1.5s;
+
+  &:hover {
+    border: 3px solid rgba(255, 255, 255, 0.05); 
+  }
+}
+.border6{
+border:3px solid #9e2888 ;
+transition: 1.5s;
+
+  &:hover {
+    border: 3px solid rgba(255, 255, 255, 0.05); 
+  }
+}
+.border{
+border:3px solid rgba(255, 255, 255, 0.05);
+}
+.border9{
+border:3px solid #149EF2;
+transition: 1.5s;
+
+  &:hover {
+    border: 3px solid rgba(255, 255, 255, 0.05); 
+  }
+}
+.border8{
+border:3px solid #18BEFF;
+transition: 1.5s;
+
+  &:hover {
+    border: 3px solid rgba(255, 255, 255, 0.05); 
+  }
+}
+.border7{
+border:3px solid  #1CDDFF;
+transition: 1.5s;
+
+  &:hover {
+    border: 3px solid rgba(255, 255, 255, 0.05); 
+  }
+}
+.border10{
+border:3px solid #107EC2;
+transition: 1.5s;
+
+  &:hover {
+    border: 3px solid rgba(255, 255, 255, 0.05); 
+  }
+}
+.border11{
+border:3px solid #0C5F91;
+transition: 1.5s;
+
+  &:hover {
+    border: 3px solid rgba(255, 255, 255, 0.05); 
+  }
+}
+.border12{
+border:3px solid #083F61;
+transition: 1.5s;
+
+  &:hover {
+    border: 3px solid rgba(255, 255, 255, 0.05); 
+  }
+}
+.border13{
+border:3px solid #FF99A7;
+transition: 1.5s;
+
+  &:hover {
+    border: 3px solid rgba(255, 255, 255, 0.05); 
+  }
+}
+.border14{
+border:3px solid #FF6685;
+transition: 1.5s;
+
+  &:hover {
+    border: 3px solid rgba(255, 255, 255, 0.05); 
+  }
+}
+.border15{
+border:3px solid #FF3363;
+transition: 1.5s;
+
+  &:hover {
+    border: 3px solid rgba(255, 255, 255, 0.05); 
+  }
+}
+.border16{
+border:3px solid #E60037;
+transition: 1.5s;
+
+  &:hover {
+    border: 3px solid rgba(255, 255, 255, 0.05); 
+  }
+}
+.border17{
+border:3px solid #CC0032;
+transition: 1.5s;
+
+  &:hover {
+    border: 3px solid rgba(255, 255, 255, 0.05); 
+  }
+}
+.border18{
+border:3px solid #990026;
+transition: 1.5s;
+
+  &:hover {
+    border: 3px solid rgba(255, 255, 255, 0.05); 
+  }
+}
+.border20{
+border:3px solid #2636C0;
+transition: 1.5s;
+
+  &:hover {
+    border: 3px solid rgba(255, 255, 255, 0.05); 
+  }
+}
+.border21{
+border:3px solid #001AFF;
+transition: 1.5s;
+
+  &:hover {
+    border: 3px solid rgba(255, 255, 255, 0.05); 
+  }
+}
+.border22{
+border:3px solid #1A2380;
+transition: 1.5s;
+
+  &:hover {
+    border: 3px solid rgba(255, 255, 255, 0.05); 
+  }
+}
+
+
+.pink{
+  
+  color: #E637B7;
+}
+
+.blue{
+  color: #149EF2;
+}
+
+.sin{
+  color: #2636C0;
+}
+
+.red{
+  color: red;
+}
+
+
+.swiper-pagination-bullet{
+  
+  background-color: #c22fa0 !important;
+ 
+    }
+
+    .card1{
+
+        &:hover{
+            box-shadow: 0 0 15px 0 #e637b7 !important;
+            transform: translateY(-25px)
+            
+        }
+        img{
+
+            border: 3px solid #e637b7 !important;
+        }
+        a{
+            color: #e637b7 !important;
+        }
+    } 
+
+    
+
+    .card2{
+    
+        &:hover{
+            box-shadow: 0 0 15px 0 #149EF2;
+            transform: translateY(-25px)
+            
+        }
+        img{
+
+            border: 3px solid #149EF2;
+        }
+        a{
+            color: #149EF2;
+        }
+    }
+    
+    .card3{
+     
+        &:hover{
+            box-shadow: 0 0 15px 0 rgba(58, 78, 255, 1);
+            transform: translateY(-25px)
+            
+        }
+        img{
+            border: 3px solid  rgba(58, 78, 255, 1);
+
+        }
+        a{
+            color:  rgba(58, 78, 255, 1);
+        }
+    
+    }
+    .card4{
+     
+        &:hover{
+            box-shadow: 0 0 15px 0 rgba(255, 0, 61, 1);
+            transform: translateY(-25px)
+            
+        }
+        img{
+            border: 3px solid  rgba(255, 0, 61, 1);
+
+        }
+        a{
+            color:  rgba(255, 0, 61, 1);
+        }
+    
+    }
+
+
+
+
+    .swiper-slide {
+      opacity: 1 !important; /* Убирает затемнение */
+      filter: none !important; /* Убирает фильтры, если есть */
+      transition: none !important; /* Убирает анимацию */
+    }

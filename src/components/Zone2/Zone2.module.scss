@@ -1,0 +1,121 @@
+.zone {
+    background-image: url(/background2.png);
+    background-color: #1a1a1a;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    // margin-bottom: 20px;
+}
+
+.wrapp {
+   
+
+    border-radius: 20px;
+// border-top: 20px;
+margin-left: 40px;
+margin-right: 40px;
+// margin-top: 20px;
+@media (max-width: 600px) {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+    h2 {
+        
+        padding: 10px;
+        padding-top:80px;
+        font-weight: 400;
+        font-size: 43px;
+        text-transform: uppercase;
+        text-align: center;
+        color: #fff;
+        // background-color: #1a1a1a;
+        border-radius: 20px;
+      margin: 0 auto;
+        width: max-content ;
+        margin-top: -40px;
+        line-height: 1;
+ 
+    }
+    span{
+
+        @media (max-width: 900px) {
+          display: none;
+        }
+    }
+
+}
+.cards{
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 50px;
+    margin-bottom: 30px;
+    margin-left: 40px;
+    @media (max-width: 1200px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: 900px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    @media (max-width: 600px) {
+      margin-left: 20px;
+    }
+}
+
+.card{
+   transition: 1s;
+   
+   
+}
+
+// .card{
+//     &:nth-child(1){
+//         &:hover{
+//             box-shadow: 0 0 15px 0 #e637b7;
+//             transform: translateY(-25px)
+            
+//         }
+//         img{
+
+//             border: 3px solid #e637b7;
+//         }
+//         a{
+//             color: #e637b7;
+//         }
+//     } 
+//     &:nth-child(2){
+//         &:hover{
+//             box-shadow: 0 0 15px 0 #149EF2;
+//             transform: translateY(-25px)
+            
+//         }
+//         img{
+
+//             border: 3px solid #149EF2;
+//         }
+//         a{
+//             color: #149EF2;
+//         }
+//     }
+//     &:nth-child(3){
+//         &:hover{
+//             box-shadow: 0 0 15px 0 rgba(58, 78, 255, 1);
+//             transform: translateY(-25px)
+            
+//         }
+//         img{
+//             border: 3px solid  rgba(58, 78, 255, 1);
+
+//         }
+//         a{
+//             color:  rgba(58, 78, 255, 1);
+//         }
+//     }
+// }
+        
+

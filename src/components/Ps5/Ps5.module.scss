@@ -1,0 +1,122 @@
+.ps5{
+    background-image: url(/backgroundPs5.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100dvh;
+    width:100%;
+// padding-left: 50px;
+    background-color: #1f1f1f;
+    display: flex;
+align-items: center;
+@media (max-width: 1400px) {
+  
+    place-items: center;
+    // padding-left: 150px;
+}
+}
+.wrapper{
+display: grid;
+grid-template-columns: 1fr 4fr;
+place-items: center;
+
+@media (max-width: 1500px) {
+    display: grid;
+  grid-template-columns: 1fr;
+  
+}
+}
+
+
+
+.text{
+    margin-bottom: 30px;
+    font-weight: 900;
+    font-size: 90px;
+    text-transform: uppercase;
+    color: #fff;
+@media (max-width: 900px) {
+  font-size: 40px;
+}
+}
+
+
+
+.title {
+    font-weight: 600;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    @media (max-width: 900px) {
+      font-size: 25px;
+    }
+}
+
+.cards{
+    // display: flex;
+    // align-items: center;
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+    flex-wrap: wrap;
+@media (max-width: 1400px) {
+  grid-template-columns: repeat(2,1fr);
+}
+@media (max-width: 1000px) {
+  grid-template-columns: 1fr;
+}
+}
+.boxs{
+//  margin-right: 20px;
+padding-right: 20px;
+@media (max-width: 900px) {
+    place-items: center;
+  
+}
+}
+
+.card {
+   padding:  6px;
+    text-align: center;
+    color: white;
+    background-color: #1f1f1f;
+    width: max-content;
+    border-radius: 15px;
+    
+}
+
+.text2 {
+    
+    font-weight: 400;
+    // padding-left: 10px;
+    // padding-right: 10px;
+padding-left: 5px;
+padding-right: 5px;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.5);
+    padding-bottom: 15px;
+}
+
+.text1 {
+    // padding: 7px;
+    padding-top: 15px;
+    
+}
+
+.text3{
+    font-weight: 400;
+font-size: 10px;
+color: rgba(255, 255, 255, 0.3);
+
+}
+
+.text4{
+    font-weight: 300;
+font-size: 20px;
+text-transform: uppercase;
+color: #fff;
+// padding: 7px;
+}

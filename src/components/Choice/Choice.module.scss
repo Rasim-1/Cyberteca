@@ -1,0 +1,258 @@
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  place-items: center;
+
+  @media (max-width: 1000px) {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding-top: 30px;
+  }
+}
+
+.heroVideo {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+height: 100dvh;
+
+  object-fit: cover;
+  @media (max-width: 700px) {
+    height: 150dvh;
+  }
+  @media (max-width: 1000px) {
+    height: 170dvh;
+  }
+}
+
+.info__box {
+  div {
+    
+    p {
+      flex-wrap: wrap;
+      color: #fff;
+      
+    }
+  }
+}
+
+.text {
+  flex-wrap: wrap;
+  color: white;
+  max-width: 400px;
+  text-align: left;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.choice {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+
+  @media (max-width: 500px) {
+    padding-bottom: 30px;
+  }
+}
+
+.profsoiz {
+  background-image: url(/profsoiz.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  opacity: 0.8;
+  height: 50dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  place-items: center;
+
+  h2 {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 10px;
+    margin-top: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+
+    @media (max-width: 500px) {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    span {
+      font-size: 40px;
+      font-weight: 800;
+      letter-spacing: 5px;
+    }
+  }
+}
+
+.scrol1 {
+  padding: 10px 12px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  font-weight: 800;
+  border: 3px solid white;
+  width: max-content;
+  color: white;
+  background-color: transparent;
+  transition: 1s;
+
+  &:hover {
+    background-color: #e73ab8;
+    box-shadow: 0 0 20px 0 #e73ab8;
+  }
+}
+
+.baumsk {
+  background-image: url(/baymsk.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 50dvh;
+  opacity: 0.8;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  place-items: center;
+
+  h2 {
+    margin-top: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 10px;
+
+    @media (max-width: 500px) {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    span {
+      font-size: 40px;
+      font-weight: 800;
+      letter-spacing: 5px;
+    }
+  }
+}
+
+.scrol2 {
+  padding: 10px 12px;
+  border-radius: 10px;
+  font-weight: 800;
+  border: 3px solid white;
+  width: max-content;
+  color: white;
+  background-color: transparent;
+  transition: 1s;
+  margin-bottom: 30px;
+
+  &:hover {
+    background-color: #149ef2;
+    box-shadow: 0 0 20px 0 #149ef2;
+  }
+}
+
+.btn {
+  width: max-content;
+  padding: 10px 45px;
+  color: gray;
+  border-radius: 10px;
+  transition: 1s;
+  background-color: white;
+  border: 1px solid white;
+ text-decoration: none;  
+
+  &:hover {
+    animation: changeBorderColor 5s infinite;
+    transition: 1s;
+  }
+
+  @media (max-width: 550px) {
+    padding: 5px 25px;
+  }
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 100px;
+
+  @media (max-width: 800px) {
+    margin-left: 30px;
+  }
+}
+
+
+
+.text {
+  color: #fff;
+
+  margin-bottom: 30px;
+}
+
+.info__box {
+  display: flex;
+  place-items: center;
+  margin-bottom: 30px;
+  gap: 20px;
+
+  img {
+    max-width: 80px;
+    width: 100%;
+    @media (max-width: 800px) {
+      display: none;
+    }
+  }
+
+  h1 {
+    color: white;
+    font-style: italic;
+    font-weight: 800;
+    font-size: 50px;
+  }
+
+  p {
+    color: white;
+    font-size: 18px;
+  }
+}
+
+@keyframes changeBorderColor {
+  0% {
+    border-color: #e73ab8;
+    box-shadow: 0 0 10px 0 #e73ab8;
+    color: #e73ab8;
+  }
+
+  50% {
+    border-color: #149ef2;
+    color: #149ef2;
+    box-shadow: 0 0 10px 0 #149ef2;
+  }
+
+  100% {
+    border-color: #e73ab8;
+    box-shadow: 0 0 10px 0 #e73ab8;
+    color: #e73ab8;
+  }
+}
