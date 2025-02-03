@@ -7,6 +7,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    justify-content: space-between;
   }
 
   .controls {
@@ -53,7 +54,8 @@
   .swiper {
     display: flex;
     gap: 20px;
-  flex-wrap: wrap;
+    flex-wrap: wrap;
+
     .card {
       background-color: #444; // Тёмный фон карточки
       border: 1px solid #666; // Светлая рамка
@@ -70,50 +72,46 @@
       position: relative;
       overflow: hidden;
 
-      // Для изображений
       img {
         width: 100%;
         height: auto;
-        max-height: 150px; // Максимальная высота изображения
-        object-fit: contain; // Сохранение пропорций изображения
+        max-height: 150px;
+        object-fit: contain;
         transition: transform 0.5s ease, opacity 0.5s ease;
-        background-color: transparent; // Прозрачный фон
-        mix-blend-mode: multiply; // Смешение, чтобы белый фон стал прозрачным
+        background-color: transparent;
+        mix-blend-mode: multiply;
 
         &:hover {
           transform: scale(1.05); // Увеличение при наведении
         }
       }
 
-      h2,
-      h3,
-      h4,
-      p {
+      h2, h3, h4, p {
         font-size: 16px;
         color: #fff; // Белый текст
         margin: 5px 0;
       }
 
-p{
-  color: #28a745;
+      p {
+        color: #28a745;
+      }
 
-}
       &:hover {
-        background-color: #333; // Затемнение фона карточки
+        background-color: #333;
       }
     }
   }
 
   .control {
     display: flex;
-    align-items: center; /* Выровнять элементы по вертикали */
-    justify-content: space-between; /* Добавить отступы между текстом и кнопками */
+    align-items: center;
+    justify-content: space-between;
     margin-bottom: 30px;
   }
 
   .control h3 {
-    margin: 0; /* Убедитесь, что у заголовка нет лишних отступов */
-    font-size: 40px; /* Настройте размер текста */
+    margin: 0;
+    font-size: 40px;
     transition: 1s;
     width: max-content;
     font-variation-settings: "wght" 100, "wdht" 125;
@@ -158,32 +156,92 @@ p{
       padding: 0;
 
       li {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
         margin-bottom: 10px;
+        gap: 10px;
+
+        .cartDetails {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+
+          img {
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+            border-radius: 5px;
+          }
+
+          span {
+            color: #fff;
+            font-size: 16px;
+          }
+        }
+
+        .cartActions {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          justify-content: flex-end;
+
+          button {
+            background: transparent;
+            border: none;
+            color: #e74c3c;
+            font-size: 18px;
+            cursor: pointer;
+          }
+
+          .quantity {
+            color: #fff;
+            font-size: 16px;
+          }
+        }
+
+        span {
+          color: #28a745;
+          font-size: 16px;
+          margin-left: 10px;
+        }
+      }
+    }
+
+    .clearCartButton {
+      background-color: #e74c3c;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 18px;
+      cursor: pointer;
+      width: 100%;
+      text-align: center;
+      margin-top: 20px;
+
+      &:hover {
+        background-color: #c0392b;
       }
     }
   }
 }
-.korzina{
+
+.korzina {
   max-width: 40px;
-  
 }
-.priceandcart{
 
-    display: flex;
-    // place-items: center;
-  
-    justify-content: space-between; /* Изменим с "space-around" на "space-between" для лучшего распределения */
-    margin-top: 20px;
-margin: 0 auto;
-  
-  s{
-    padding: 0;
-    color: #e74c3c;
-  }
-
+.priceandcart {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
 }
+
 .cards {
   display: flex;
-  flex-direction: column; /* Чтобы элементы располагались горизонтально */
-  gap: 10px; /* Добавим небольшой промежуток между ценой и корзиной */
+  flex-direction: column;
+  gap: 5px;
+}
+
+.btnitog {
+  border-top: solid #666;
 }

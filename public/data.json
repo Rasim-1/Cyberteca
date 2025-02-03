@@ -1,58 +1,723 @@
 {
   "product": [
-    { "id": 3, "category": "Monitor", "name": "ASUS ROG Swift PG32UQX", "size": "32 inches", "resolution": "3840x2160 (4K)", "refresh_rate": "144Hz", "features": ["HDR1000", "G-Sync Ultimate", "IPS panel"], "price": 2999.99, "image": "https://www.asus.com/media/global/SKU/90LM05R0-B01310/naahqaexpzfrfmm0.jpg" },
-    { "id": 13, "category": "Monitor", "name": "Acer Predator X35", "size": "35 inches", "resolution": "3440x1440", "refresh_rate": "200Hz", "features": ["G-Sync Ultimate", "HDR1000", "Curve"], "price": 2999.99, "image": "https://m.media-amazon.com/images/I/71xWi4zl8WL.jpg "},
-    { "id": 7, "category": "Monitor", "name": "Samsung Odyssey Neo G8", "size": "32 inches", "resolution": "3840x2160 (4K)", "refresh_rate": "240Hz", "features": ["Mini LED", "HDR2000", "Curve 1000R"], "price": 2499.99, "image": "https://files.ox-sys.com/cache/800x_/image/37/56/23/375623e175bdcc01c70fa761728acbcea57b520c6fafb149255fba26488c202a.jpg" },
-    { "id": 11, "category": "Monitor", "name": "LG UltraGear 38GN950-B", "size": "38 inches", "resolution": "3840x1600", "refresh_rate": "144Hz", "features": ["Nano IPS", "HDR600", "G-Sync Compatible"], "price": 1999.99, "image": "https://www.lg.com/content/dam/channel/wcms/pt/images/monitores/38gn950-b_aeu_eept_pt_c/gallery/DZ-1.jpg" },
-    { "id": 26, "category": "Monitor", "name": "MSI Optix MAG274QRF", "size": "27 inches", "resolution": "2560x1440", "refresh_rate": "165Hz", "features": ["HDR400", "G-Sync Compatible"], "price": 449.99, "image": "https://storage-asset.msi.com/global/picture/image/feature/monitor/OPTIX-MAG274R/mag274r-mystic.png" },
-    { "id": 18, "category": "Monitor", "name": "Dell S2721DGF", "size": "27 inches", "resolution": "2560x1440", "refresh_rate": "165Hz", "features": ["IPS", "HDR10"], "price": 449.99, "image": "https://i.dell.com/is/image/DellContent//content/dam/ss2/product-images/peripherals/output-devices/dell/monitors/s2721dgf/general/update-image-screenfill-monitor-s2721dgf-2000x1500-v4.psd?fmt=pjpg&pscan=auto&scl=1&wid=2000&hei=1500&qlt=100,1&resMode=sharp2&size=2000,1500&chrss=full&imwidth=5000" },
-    { "id": 22, "category": "Monitor", "name": "Acer Nitro XV272U", "size": "27 inches", "resolution": "2560x1440", "refresh_rate": "144Hz", "features": ["HDR400", "Adaptive-Sync"], "price": 329.99, "image": "https://m.media-amazon.com/images/I/61+e8subxPL.jpg" },
-    { "id": 30, "category": "Monitor", "name": "Samsung T55 Curved", "size": "27 inches", "resolution": "1920x1080", "refresh_rate": "75Hz", "features": ["Curve 1000R", "Flicker-free"], "price": 299.99, "image": "https://images.samsung.com/is/image/samsung/p6pim/nz/lc27t550fdexxy/gallery/nz-t55-lc27t550fdexxy-540236744?$684_547_PNG$" },
-    { "id": 34, "category": "Monitor", "name": "ViewSonic VX2758-2KP-MHD", "size": "27 inches", "resolution": "2560x1440", "refresh_rate": "144Hz", "features": ["FreeSync", "IPS panel"], "price": 299.99, "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfsgXKfynQohqo40H0edW3u1UQ47Q5rlB7dw&s" },
-      { "id": 46, "category": "Monitor", "name": "Samsung S19F350", "size": "19 inches", "resolution": "1366x768", "refresh_rate": "60Hz", "features": ["Slim design", "Eco-saving mode"], "price": 99.99, "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRH86xqFTeA_YbkYjx3qBWb7wK7oKwDQPJnnw&s" },
-      { "id": 42, "category": "Monitor", "name": "Acer V206HQL", "size": "19.5 inches", "resolution": "1600x900", "refresh_rate": "60Hz", "features": ["Anti-glare", "TN panel"], "price": 89.99, "image": "https://m.media-amazon.com/images/I/617obotdZ0L.jpg" },
-      { "id": 50, "category": "Monitor", "name": "ViewSonic VA1903H", "size": "19 inches", "resolution": "1366x768", "refresh_rate": "60Hz", "features": ["Flicker-free", "Eco-mode"], "price": 79.99, "image": "https://www.viewsonic.com/media/catalog/product/cache/2072e83f2e881a73b096e3b7091900a2/v/a/va1903h_front_hires.png" },
-      { "id": 38, "category": "Monitor", "name": "HP V194", "size": "18.5 inches", "resolution": "1366x768", "refresh_rate": "60Hz", "features": ["Basic display", "TN panel"], "price": 79.99, "image": "https://m.media-amazon.com/images/I/31g3cvyeN9L._AC_UF894,1000_QL80_.jpg" },
-      { "id": 4, "category": "PCBlock", "name": "Custom Gaming PC", "size": "Intel Core i9-13900K", "resolution": "NVIDIA RTX 4090", "ram": "64GB DDR5", "storage": ["2TB NVMe SSD", "4TB HDD"], "features": ["Liquid cooling", "ARGB case"], "price": 4999.99, "image": "https://nzxt.com/assets/cms/34299/1699518219-gaming-pc-game-your-way-prebuilt-pc-primary-krakene-lg.png?auto=format&fit=max&h=900&w=672" },
-      { "id": 8, "category": "PCBlock", "name": "Alienware Aurora R15", "size": "Intel Core i9-13900KF", "resolution": "NVIDIA RTX 4080", "ram": "32GB DDR5", "storage": ["2TB SSD"], "features": ["Custom cooling system", "RGB case"], "price": 3499.99, "image": "https://m.media-amazon.com/images/I/61VVncm-6zL._AC_SL1100_.jpg" },
-      { "id": 12, "category": "PCBlock", "name": "MSI MEG Trident X", "size": "Intel Core i7-13700K", "resolution": "NVIDIA RTX 4070 Ti", "ram": "32GB DDR5", "storage": ["2TB SSD"], "features": ["Compact design", "Custom cooling"], "price": 2799.99, "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS7UAJNt9mR4mC41zEItDlCgGR9NPLQMI8Sg&s "},
-      { "id": 19, "category": "PCBlock", "name": "HP Omen 25L", "size": "Intel Core i5-13400", "resolution": "NVIDIA RTX 3060", "ram": "16GB DDR4", "storage": ["1TB SSD"], "features": ["Sleek design", "Expandable storage"], "price": 1299.99, "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQF58fhOOrnric6-5Q65SgsQVF9CO4gtqtDCA&s" },
-      { "id": 23, "category": "PCBlock", "name": "Lenovo Legion Tower 5i", "size": "Intel Core i5-12400", "resolution": "NVIDIA GTX 1660 Ti", "ram": "16GB DDR4", "storage": ["1TB HDD", "256GB SSD"], "features": ["Upgradeable", "Stylish case"], "price": 999.99, "image": "https://m.media-amazon.com/images/I/71+i2r6oLBL.jpg" },
-      { "id": 27, "category": "PCBlock", "name": "Dell G5 Gaming Desktop", "size": "AMD Ryzen 5 5600G", "resolution": "AMD RX 6500 XT", "ram": "16GB DDR4", "storage": ["512GB SSD"], "features": ["Compact design", "Tool-less access"], "price": 899.99, "image": "https://m.media-amazon.com/images/I/81G0qxAE7aL.jpg" },
-      { "id": 31, "category": "PCBlock", "name": "CyberPowerPC Gamer Xtreme", "size": "Intel Core i5-12400F", "resolution": "NVIDIA GTX 1650", "ram": "8GB DDR4", "storage": ["500GB SSD"], "features": ["RGB lighting", "Tool-less access"], "price": 799.99, "image": "https://images-cdn.ubuy.co.in/633ae0113a507b335d257c9f-cyberpowerpc-gamer-xtreme-vr-gaming-pc.jpg" },
-      { "id": 35, "category": "PCBlock", "name": "Acer Aspire TC-895", "size": "Intel Core i5-10400", "resolution": "Integrated UHD Graphics 630", "ram": "12GB DDR4", "storage": ["1TB HDD"], "features": ["Compact case", "Low power consumption"], "price": 549.99, "image": "https://images.acer.com/is/image/acer/aspire-tc-895_01-1" },
-      { "id": 39, "category": "PCBlock", "name": "HP 290 G4", "size": "Intel Core i3-10100", "resolution": "Integrated UHD Graphics 630", "ram": "8GB DDR4", "storage": ["500GB HDD"], "features": ["Compact case", "Basic productivity"], "price": 399.99, "image": "https://ipmac.uz/images/detailed/12/749826907-kompyuter-hp-290-g4-mt-205u0es-1200x630.jpg" },
-      { "id": 43, "category": "PCBlock", "name": "Lenovo IdeaCentre 3", "size": "AMD Athlon 3050U", "resolution": "Integrated Radeon Graphics", "ram": "4GB DDR4", "storage": ["1TB HDD"], "features": ["Compact design", "Entry-level performance"], "price": 349.99, "image": "https://img.mvideo.ru/Pdb/30050692b.jpg" },
-      { "id": 47, "category": "PCBlock", "name": "Acer Veriton X", "size": "Intel Pentium G6400", "resolution": "Integrated UHD Graphics 610", "ram": "4GB DDR4", "storage": ["500GB HDD"], "features": ["Basic productivity", "Small form factor"], "price": 299.99, "image": "https://lv2.pigugroup.eu/colours/249/292/36/24929236/acer-veriton-x-x2690g-no-25665-atsauksme_reference.jpg" },
-      { "id": 52, "category": "PCBlock", "name": "Intel NUC 10", "size": "Intel Celeron J4005", "resolution": "Integrated UHD Graphics 600", "ram": "4GB DDR4", "storage": ["128GB SSD"], "features": ["Compact design", "Energy-efficient"], "price": 299.99, "image": "https://images-cdn.ubuy.co.in/6357f02d2fae04491c5a6e46-intel-nuc-10-performance-kit-intel.jpg" },
-      { "id": 51, "category": "PCBlock", "name": "ASUS PN40", "size": "Intel Celeron N4000", "resolution": "Integrated UHD Graphics 600", "ram": "4GB DDR4", "storage": ["64GB eMMC"], "features": ["Fanless design", "Ultra-compact"], "price": 249.99, "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrkb03POPAoJupMIDbQ_1Yu3zksOA9pjIxYw&s" },
-      { "id": 6, "category": "Mouse", "name": "Razer DeathAdder V3 Pro", "size": 30000, "features": ["Ultra-lightweight", "Wireless", "Ergonomic design"], "price": 149.99, "image": "https://minapi.beemarket.uz/prod-media/productImages/thumbnails/medium/34a4f493-3a0d-41ff-9adb-1bf69d41d5d4/d99c8e08-de85-4730-9f7c-323823b316b1.webp" },
-      { "id": 10, "category": "Mouse", "name": "Logitech MX Master 3S", "size": 8000, "features": ["Ergonomic design", "Wireless", "MagSpeed scrolling"], "price": 129.99, "image": "https://maxcom.uz/storage/product/jfSJXhmZ4u3otqg0ljXWkbfqF2vT6ykW0zu3iGDa.jpeg" },
-      { "id": 15, "category": "Mouse", "name": "Corsair Dark Core RGB Pro SE", "size": 18000, "features": ["Wireless", "Qi charging", "Customizable buttons"], "price": 99.99, "image": "https://dl.bs365.uz/storage/products/11389/Q5DjY9JYyf7zobHL1n9x-medium_default.jpg" },
-      { "id": 2, "category": "Mouse", "name": "Logitech G502 HERO", "size": 25600, "features": ["Adjustable weights", "RGB lighting", "11 programmable buttons"], "price": 79.99, "image": "https://maxcom.uz/storage/product/MliBERSyZMViJhdqbSS157FciFpZjWKtzZkeEElh.png" },
-      { "id": 25, "category": "Mouse", "name": "Zowie EC2-B", "size": 3200, "features": ["Ergonomic design", "Plug and play"], "price": 59.99, "image": "https://i0.wp.com/pcmarket.uz/wp-content/uploads/2022/11/efbd2be6ffa5f8d375bf1825506c5b5320200825165756816783CpBE66fk3.png-removebg-preview.png?fit=650%2C650&ssl=1" },
-      { "id": 33, "category": "Mouse", "name": "Cooler Master MM711", "size": 16000, "features": ["Ultra-lightweight", "RGB lighting"], "price": 49.99, "image": "https://a.storyblok.com/f/281110/74fa2c73e0/mm711-black-matte-gallery-1.png" },
-      { "id": 21, "category": "Mouse", "name": "Logitech G305", "size": 12000, "features": ["Wireless", "Lightweight", "Long battery life"], "price": 49.99, "image": "https://maxcom.uz/storage/product/2KbnNSZvFksizFZsQgqgryK7POoFTYQoVH21JKW9.jpeg" },
-      { "id": 29, "category": "Mouse", "name": "HyperX Pulsefire FPS Pro", "size": 16000, "features": ["RGB lighting", "Ergonomic design"], "price": 39.99, "image": "https://mycom.uz/image/cache/catalog/HyperXPulsfireFPSPro1-500x500.jpg" },
-      { "id": 17, "category": "Mouse", "name": "SteelSeries Rival 3", "size": 8500, "features": ["RGB lighting", "Lightweight design"], "price": 29.99, "image": "https://api.radius.uz/storage/products/February2023/Q3gFdp3py7ngUlOkZ3JT.png" },
-      { "id": 37, "category": "Mouse", "name": "Logitech M100", "size": 1000, "features": ["Basic design", "Wired"], "price": 9.99, "image": "https://api.zon.uz/files/products/image/66b73f3481a2a17a2fe51ffb.webp" },
-      { "id": 45, "category": "Mouse", "name": "Trust Primo", "size": 1200, "features": ["Basic design", "Compact size"], "price": 7.99, "image": "https://dl.bs365.uz/storage/products/20877/llXjFLN1yzqD5zYDbjkG.jpg" },
-      { "id": 41, "category": "Mouse", "name": "HP X1000", "size": 1200, "features": ["Basic design", "Wired"], "price": 8.99, "image": "https://in-media.apjonlinecdn.com/catalog/product/cache/b3b166914d87ce343d4dc5ec5117b502/c/0/c03239475.png" },
-      { "id": 49, "category": "Mouse", "name": "Dell MS116", "size": 1000, "features": ["Simple design", "Wired"], "price": 6.99, "image": "https://maxcom.uz/storage/product/jF1s4TJzS58rWBdgG4VYaxOiFQkxp309n2m3yMng.jpeg" },
-      { "id": 14, "category": "Keyboard", "name": "Logitech G915 TKL", "size": "Mechanical", "switches": "Low-profile GL Tactile", "features": ["Wireless", "RGB lighting"], "price": 229.99, "image": "https://maxcom.uz/storage/product/lJsV1uiWniTMGOmX9WCEzzAvBrxppnPPcFDH7Lsb.jpeg" },
-      { "id": 5, "category": "Keyboard", "name": "Razer BlackWidow V4 Pro", "size": "Mechanical", "switches": "Razer Green", "features": ["Per-key RGB", "Magnetic wrist rest"], "price": 229.99, "image": "https://m.media-amazon.com/images/I/71T2O0O7DhL._AC_SL1500_.jpg" },
-      { "id": 9, "category": "Keyboard", "name": "SteelSeries Apex Pro", "size": "Mechanical", "switches": "OmniPoint Adjustable", "features": ["Per-key RGB", "OLED Smart Display"], "price": 199.99, "image": "https://files.ox-sys.com/cache/800x_/image/7b/52/28/7b5228162be9cb677278d053a4e307bd5db1009bea11d4119242f4ee95c58d80.jpg" },
-      { "id": 1, "category": "Keyboard", "name": "Corsair K95 RGB Platinum", "size": "Mechanical", "switches": "Cherry MX Speed", "features": ["RGB lighting", "Macro keys", "Aluminum frame"], "price": 199.99, "image": "https://olcha.uz/image/original/products/2021-11-13/klaviatura-corsair-k95-rgb-platinum-cherry-mx-speed-ru-27086-0.jpeg" },
-      { "id": 24, "category": "Keyboard", "name": "Cooler Master CK552", "size": "Mechanical", "switches": "Gateron Red", "features": ["RGB lighting", "Aluminum design"], "price": 89.99, "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF2nVF-jkHIYEA7My7_zhWrJMjK2BnYhk8lg&s" },
-      { "id": 16, "category": "Keyboard", "name": "HyperX Alloy FPS Pro", "size": "Mechanical", "switches": "Cherry MX Red", "features": ["Compact design", "Backlit keys"], "price": 79.99, "image": "https://tovar.uz/images/company/444/tovar/77636/o_61b336ed9273c.jpg" },
-      { "id": 20, "category": "Keyboard", "name": "Razer Cynosa V2", "size": "Membrane", "features": ["RGB lighting", "Quiet typing"], "price": 59.99, "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0aac3k5EqntfO-9DdZC-IZdU9_-_DAl8FsA&s" },
-      { "id": 28, "category": "Keyboard", "name": "Logitech G213 Prodigy", "size": "Membrane", "features": ["RGB lighting", "Spill-resistant"], "price": 49.99, "image": "https://maxcom.uz/storage/product/vKq0liCyMnIzdRorSjQPI5jNjZXYhxxeLcBrGwLG.png" },
-      { "id": 32, "category": "Keyboard", "name": "Redragon K552 Kumara", "size": "Mechanical", "switches": "Outemu Blue", "features": ["Compact design", "RGB lighting"], "price": 49.99, "image": "https://cdn.mediapark.uz/imgs/2b4b93db-abc5-47bb-abc8-e181648fb683_Artboard-1.webp" },
-      { "id": 44, "category": "Keyboard", "name": "Microsoft Wired Keyboard 600", "size": "Membrane", "features": ["Quiet keys", "Media keys"], "price": 19.99, "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKj-cL7EersS6C8lfJ2JmJ017V3og-BMdkpA&s" },
-      { "id": 36, "category": "Keyboard", "name": "Dell KB216", "size": "Membrane", "features": ["Basic design", "Wired"], "price": 14.99, "image": "https://mini-io-api.texnomart.uz/catalog/product/1025/102523/180217/4d831418-0189-409e-854e-0634a355e012.jpg" },
-      { "id": 40, "category": "Keyboard", "name": "Logitech K120", "size": "Membrane", "features": ["Spill-resistant", "Affordable"], "price": 12.99, "image": "https://cdn.mediapark.uz/imgs/c4178e07-5256-4691-a1b3-a54a1b5b6fc1_Artboard1-1300.webp" },
-      { "id": 48, "category": "Keyboard", "name": "HP 100 Wired Keyboard", "size": "Membrane", "features": ["Durable keys", "Compact design"], "price": 10.99, "image": "https://pcmarket.uz/wp-content/uploads/2022/11/s-l500.png" }
-
-    ]  
-  }
-  
+    {
+      "id": "13",
+      "category": "Monitor",
+      "name": "Acer Predator X35",
+      "size": "35 inches",
+      "resolution": "3440x1440",
+      "refresh_rate": "200Hz",
+      "features": [
+        "G-Sync Ultimate",
+        "HDR1000",
+        "Curve"
+      ],
+      "price": 2999.99,
+      "image": "https://m.media-amazon.com/images/I/71xWi4zl8WL.jpg "
+    },
+    {
+      "id": "7",
+      "category": "Monitor",
+      "name": "Samsung Odyssey Neo G8",
+      "size": "32 inches",
+      "resolution": "3840x2160 (4K)",
+      "refresh_rate": "240Hz",
+      "features": [
+        "Mini LED",
+        "HDR2000",
+        "Curve 1000R"
+      ],
+      "price": 2499.99,
+      "image": "https://files.ox-sys.com/cache/800x_/image/37/56/23/375623e175bdcc01c70fa761728acbcea57b520c6fafb149255fba26488c202a.jpg"
+    },
+    {
+      "id": "11",
+      "category": "Monitor",
+      "name": "LG UltraGear 38GN950-B",
+      "size": "38 inches",
+      "resolution": "3840x1600",
+      "refresh_rate": "144Hz",
+      "features": [
+        "Nano IPS",
+        "HDR600",
+        "G-Sync Compatible"
+      ],
+      "price": 1999.99,
+      "image": "https://www.lg.com/content/dam/channel/wcms/pt/images/monitores/38gn950-b_aeu_eept_pt_c/gallery/DZ-1.jpg"
+    },
+    {
+      "id": "26",
+      "category": "Monitor",
+      "name": "MSI Optix MAG274QRF",
+      "size": "27 inches",
+      "resolution": "2560x1440",
+      "refresh_rate": "165Hz",
+      "features": [
+        "HDR400",
+        "G-Sync Compatible"
+      ],
+      "price": 449.99,
+      "image": "https://storage-asset.msi.com/global/picture/image/feature/monitor/OPTIX-MAG274R/mag274r-mystic.png"
+    },
+    {
+      "id": "18",
+      "category": "Monitor",
+      "name": "Dell S2721DGF",
+      "size": "27 inches",
+      "resolution": "2560x1440",
+      "refresh_rate": "165Hz",
+      "features": [
+        "IPS",
+        "HDR10"
+      ],
+      "price": 449.99,
+      "image": "https://i.dell.com/is/image/DellContent//content/dam/ss2/product-images/peripherals/output-devices/dell/monitors/s2721dgf/general/update-image-screenfill-monitor-s2721dgf-2000x1500-v4.psd?fmt=pjpg&pscan=auto&scl=1&wid=2000&hei=1500&qlt=100,1&resMode=sharp2&size=2000,1500&chrss=full&imwidth=5000"
+    },
+    {
+      "id": "22",
+      "category": "Monitor",
+      "name": "Acer Nitro XV272U",
+      "size": "27 inches",
+      "resolution": "2560x1440",
+      "refresh_rate": "144Hz",
+      "features": [
+        "HDR400",
+        "Adaptive-Sync"
+      ],
+      "price": 329.99,
+      "image": "https://m.media-amazon.com/images/I/61+e8subxPL.jpg"
+    },
+    {
+      "id": "30",
+      "category": "Monitor",
+      "name": "Samsung T55 Curved",
+      "size": "27 inches",
+      "resolution": "1920x1080",
+      "refresh_rate": "75Hz",
+      "features": [
+        "Curve 1000R",
+        "Flicker-free"
+      ],
+      "price": 299.99,
+      "image": "https://images.samsung.com/is/image/samsung/p6pim/nz/lc27t550fdexxy/gallery/nz-t55-lc27t550fdexxy-540236744?$684_547_PNG$"
+    },
+    {
+      "id": "34",
+      "category": "Monitor",
+      "name": "ViewSonic VX2758-2KP-MHD",
+      "size": "27 inches",
+      "resolution": "2560x1440",
+      "refresh_rate": "144Hz",
+      "features": [
+        "FreeSync",
+        "IPS panel"
+      ],
+      "price": 299.99,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfsgXKfynQohqo40H0edW3u1UQ47Q5rlB7dw&s"
+    },
+    {
+      "id": "46",
+      "category": "Monitor",
+      "name": "Samsung S19F350",
+      "size": "19 inches",
+      "resolution": "1366x768",
+      "refresh_rate": "60Hz",
+      "features": [
+        "Slim design",
+        "Eco-saving mode"
+      ],
+      "price": 99.99,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRH86xqFTeA_YbkYjx3qBWb7wK7oKwDQPJnnw&s"
+    },
+    {
+      "id": "42",
+      "category": "Monitor",
+      "name": "Acer V206HQL",
+      "size": "19.5 inches",
+      "resolution": "1600x900",
+      "refresh_rate": "60Hz",
+      "features": [
+        "Anti-glare",
+        "TN panel"
+      ],
+      "price": 89.99,
+      "image": "https://m.media-amazon.com/images/I/617obotdZ0L.jpg"
+    },
+    {
+      "id": "50",
+      "category": "Monitor",
+      "name": "ViewSonic VA1903H",
+      "size": "19 inches",
+      "resolution": "1366x768",
+      "refresh_rate": "60Hz",
+      "features": [
+        "Flicker-free",
+        "Eco-mode"
+      ],
+      "price": 79.99,
+      "image": "https://www.viewsonic.com/media/catalog/product/cache/2072e83f2e881a73b096e3b7091900a2/v/a/va1903h_front_hires.png"
+    },
+    {
+      "id": "38",
+      "category": "Monitor",
+      "name": "HP V194",
+      "size": "18.5 inches",
+      "resolution": "1366x768",
+      "refresh_rate": "60Hz",
+      "features": [
+        "Basic display",
+        "TN panel"
+      ],
+      "price": 79.99,
+      "image": "https://m.media-amazon.com/images/I/31g3cvyeN9L._AC_UF894,1000_QL80_.jpg"
+    },
+    {
+      "id": "4",
+      "category": "PCBlock",
+      "name": "Custom Gaming PC",
+      "size": "Intel Core i9-13900K",
+      "resolution": "NVIDIA RTX 4090",
+      "ram": "64GB DDR5",
+      "storage": [
+        "2TB NVMe SSD",
+        "4TB HDD"
+      ],
+      "features": [
+        "Liquid cooling",
+        "ARGB case"
+      ],
+      "price": 4999.99,
+      "image": "https://nzxt.com/assets/cms/34299/1699518219-gaming-pc-game-your-way-prebuilt-pc-primary-krakene-lg.png?auto=format&fit=max&h=900&w=672"
+    },
+    {
+      "id": "8",
+      "category": "PCBlock",
+      "name": "Alienware Aurora R15",
+      "size": "Intel Core i9-13900KF",
+      "resolution": "NVIDIA RTX 4080",
+      "ram": "32GB DDR5",
+      "storage": [
+        "2TB SSD"
+      ],
+      "features": [
+        "Custom cooling system",
+        "RGB case"
+      ],
+      "price": 3499.99,
+      "image": "https://m.media-amazon.com/images/I/61VVncm-6zL._AC_SL1100_.jpg"
+    },
+    {
+      "id": "12",
+      "category": "PCBlock",
+      "name": "MSI MEG Trident X",
+      "size": "Intel Core i7-13700K",
+      "resolution": "NVIDIA RTX 4070 Ti",
+      "ram": "32GB DDR5",
+      "storage": [
+        "2TB SSD"
+      ],
+      "features": [
+        "Compact design",
+        "Custom cooling"
+      ],
+      "price": 2799.99,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS7UAJNt9mR4mC41zEItDlCgGR9NPLQMI8Sg&s "
+    },
+    {
+      "id": "19",
+      "category": "PCBlock",
+      "name": "HP Omen 25L",
+      "size": "Intel Core i5-13400",
+      "resolution": "NVIDIA RTX 3060",
+      "ram": "16GB DDR4",
+      "storage": [
+        "1TB SSD"
+      ],
+      "features": [
+        "Sleek design",
+        "Expandable storage"
+      ],
+      "price": 1299.99,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQF58fhOOrnric6-5Q65SgsQVF9CO4gtqtDCA&s"
+    },
+    {
+      "id": "23",
+      "category": "PCBlock",
+      "name": "Lenovo Legion Tower 5i",
+      "size": "Intel Core i5-12400",
+      "resolution": "NVIDIA GTX 1660 Ti",
+      "ram": "16GB DDR4",
+      "storage": [
+        "1TB HDD",
+        "256GB SSD"
+      ],
+      "features": [
+        "Upgradeable",
+        "Stylish case"
+      ],
+      "price": 999.99,
+      "image": "https://m.media-amazon.com/images/I/71+i2r6oLBL.jpg"
+    },
+    {
+      "id": "27",
+      "category": "PCBlock",
+      "name": "Dell G5 Gaming Desktop",
+      "size": "AMD Ryzen 5 5600G",
+      "resolution": "AMD RX 6500 XT",
+      "ram": "16GB DDR4",
+      "storage": [
+        "512GB SSD"
+      ],
+      "features": [
+        "Compact design",
+        "Tool-less access"
+      ],
+      "price": 899.99,
+      "image": "https://m.media-amazon.com/images/I/81G0qxAE7aL.jpg"
+    },
+    {
+      "id": "31",
+      "category": "PCBlock",
+      "name": "CyberPowerPC Gamer Xtreme",
+      "size": "Intel Core i5-12400F",
+      "resolution": "NVIDIA GTX 1650",
+      "ram": "8GB DDR4",
+      "storage": [
+        "500GB SSD"
+      ],
+      "features": [
+        "RGB lighting",
+        "Tool-less access"
+      ],
+      "price": 799.99,
+      "image": "https://images-cdn.ubuy.co.in/633ae0113a507b335d257c9f-cyberpowerpc-gamer-xtreme-vr-gaming-pc.jpg"
+    },
+    {
+      "id": "35",
+      "category": "PCBlock",
+      "name": "Acer Aspire TC-895",
+      "size": "Intel Core i5-10400",
+      "resolution": "Integrated UHD Graphics 630",
+      "ram": "12GB DDR4",
+      "storage": [
+        "1TB HDD"
+      ],
+      "features": [
+        "Compact case",
+        "Low power consumption"
+      ],
+      "price": 549.99,
+      "image": "https://images.acer.com/is/image/acer/aspire-tc-895_01-1"
+    },
+    {
+      "id": "39",
+      "category": "PCBlock",
+      "name": "HP 290 G4",
+      "size": "Intel Core i3-10100",
+      "resolution": "Integrated UHD Graphics 630",
+      "ram": "8GB DDR4",
+      "storage": [
+        "500GB HDD"
+      ],
+      "features": [
+        "Compact case",
+        "Basic productivity"
+      ],
+      "price": 399.99,
+      "image": "https://ipmac.uz/images/detailed/12/749826907-kompyuter-hp-290-g4-mt-205u0es-1200x630.jpg"
+    },
+    {
+      "id": "43",
+      "category": "PCBlock",
+      "name": "Lenovo IdeaCentre 3",
+      "size": "AMD Athlon 3050U",
+      "resolution": "Integrated Radeon Graphics",
+      "ram": "4GB DDR4",
+      "storage": [
+        "1TB HDD"
+      ],
+      "features": [
+        "Compact design",
+        "Entry-level performance"
+      ],
+      "price": 349.99,
+      "image": "https://img.mvideo.ru/Pdb/30050692b.jpg"
+    },
+    {
+      "id": "47",
+      "category": "PCBlock",
+      "name": "Acer Veriton X",
+      "size": "Intel Pentium G6400",
+      "resolution": "Integrated UHD Graphics 610",
+      "ram": "4GB DDR4",
+      "storage": [
+        "500GB HDD"
+      ],
+      "features": [
+        "Basic productivity",
+        "Small form factor"
+      ],
+      "price": 299.99,
+      "image": "https://lv2.pigugroup.eu/colours/249/292/36/24929236/acer-veriton-x-x2690g-no-25665-atsauksme_reference.jpg"
+    },
+    {
+      "id": "52",
+      "category": "PCBlock",
+      "name": "Intel NUC 10",
+      "size": "Intel Celeron J4005",
+      "resolution": "Integrated UHD Graphics 600",
+      "ram": "4GB DDR4",
+      "storage": [
+        "128GB SSD"
+      ],
+      "features": [
+        "Compact design",
+        "Energy-efficient"
+      ],
+      "price": 299.99,
+      "image": "https://images-cdn.ubuy.co.in/6357f02d2fae04491c5a6e46-intel-nuc-10-performance-kit-intel.jpg"
+    },
+    {
+      "id": "51",
+      "category": "PCBlock",
+      "name": "ASUS PN40",
+      "size": "Intel Celeron N4000",
+      "resolution": "Integrated UHD Graphics 600",
+      "ram": "4GB DDR4",
+      "storage": [
+        "64GB eMMC"
+      ],
+      "features": [
+        "Fanless design",
+        "Ultra-compact"
+      ],
+      "price": 249.99,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrkb03POPAoJupMIDbQ_1Yu3zksOA9pjIxYw&s"
+    },
+    {
+      "id": "6",
+      "category": "Mouse",
+      "name": "Razer DeathAdder V3 Pro",
+      "size": 30000,
+      "features": [
+        "Ultra-lightweight",
+        "Wireless",
+        "Ergonomic design"
+      ],
+      "price": 149.99,
+      "image": "https://minapi.beemarket.uz/prod-media/productImages/thumbnails/medium/34a4f493-3a0d-41ff-9adb-1bf69d41d5d4/d99c8e08-de85-4730-9f7c-323823b316b1.webp"
+    },
+    {
+      "id": "10",
+      "category": "Mouse",
+      "name": "Logitech MX Master 3S",
+      "size": 8000,
+      "features": [
+        "Ergonomic design",
+        "Wireless",
+        "MagSpeed scrolling"
+      ],
+      "price": 129.99,
+      "image": "https://maxcom.uz/storage/product/jfSJXhmZ4u3otqg0ljXWkbfqF2vT6ykW0zu3iGDa.jpeg"
+    },
+    {
+      "id": "15",
+      "category": "Mouse",
+      "name": "Corsair Dark Core RGB Pro SE",
+      "size": 18000,
+      "features": [
+        "Wireless",
+        "Qi charging",
+        "Customizable buttons"
+      ],
+      "price": 99.99,
+      "image": "https://dl.bs365.uz/storage/products/11389/Q5DjY9JYyf7zobHL1n9x-medium_default.jpg"
+    },
+    {
+      "id": "2",
+      "category": "Mouse",
+      "name": "Logitech G502 HERO",
+      "size": 25600,
+      "features": [
+        "Adjustable weights",
+        "RGB lighting",
+        "11 programmable buttons"
+      ],
+      "price": 79.99,
+      "image": "https://maxcom.uz/storage/product/MliBERSyZMViJhdqbSS157FciFpZjWKtzZkeEElh.png"
+    },
+    {
+      "id": "25",
+      "category": "Mouse",
+      "name": "Zowie EC2-B",
+      "size": 3200,
+      "features": [
+        "Ergonomic design",
+        "Plug and play"
+      ],
+      "price": 59.99,
+      "image": "https://i0.wp.com/pcmarket.uz/wp-content/uploads/2022/11/efbd2be6ffa5f8d375bf1825506c5b5320200825165756816783CpBE66fk3.png-removebg-preview.png?fit=650%2C650&ssl=1"
+    },
+    {
+      "id": "33",
+      "category": "Mouse",
+      "name": "Cooler Master MM711",
+      "size": 16000,
+      "features": [
+        "Ultra-lightweight",
+        "RGB lighting"
+      ],
+      "price": 49.99,
+      "image": "https://a.storyblok.com/f/281110/74fa2c73e0/mm711-black-matte-gallery-1.png"
+    },
+    {
+      "id": "21",
+      "category": "Mouse",
+      "name": "Logitech G305",
+      "size": 12000,
+      "features": [
+        "Wireless",
+        "Lightweight",
+        "Long battery life"
+      ],
+      "price": 49.99,
+      "image": "https://maxcom.uz/storage/product/2KbnNSZvFksizFZsQgqgryK7POoFTYQoVH21JKW9.jpeg"
+    },
+    {
+      "id": "29",
+      "category": "Mouse",
+      "name": "HyperX Pulsefire FPS Pro",
+      "size": 16000,
+      "features": [
+        "RGB lighting",
+        "Ergonomic design"
+      ],
+      "price": 39.99,
+      "image": "https://mycom.uz/image/cache/catalog/HyperXPulsfireFPSPro1-500x500.jpg"
+    },
+    {
+      "id": "17",
+      "category": "Mouse",
+      "name": "SteelSeries Rival 3",
+      "size": 8500,
+      "features": [
+        "RGB lighting",
+        "Lightweight design"
+      ],
+      "price": 29.99,
+      "image": "https://api.radius.uz/storage/products/February2023/Q3gFdp3py7ngUlOkZ3JT.png"
+    },
+    {
+      "id": "37",
+      "category": "Mouse",
+      "name": "Logitech M100",
+      "size": 1000,
+      "features": [
+        "Basic design",
+        "Wired"
+      ],
+      "price": 9.99,
+      "image": "https://api.zon.uz/files/products/image/66b73f3481a2a17a2fe51ffb.webp"
+    },
+    {
+      "id": "45",
+      "category": "Mouse",
+      "name": "Trust Primo",
+      "size": 1200,
+      "features": [
+        "Basic design",
+        "Compact size"
+      ],
+      "price": 7.99,
+      "image": "https://dl.bs365.uz/storage/products/20877/llXjFLN1yzqD5zYDbjkG.jpg"
+    },
+    {
+      "id": "41",
+      "category": "Mouse",
+      "name": "HP X1000",
+      "size": 1200,
+      "features": [
+        "Basic design",
+        "Wired"
+      ],
+      "price": 8.99,
+      "image": "https://in-media.apjonlinecdn.com/catalog/product/cache/b3b166914d87ce343d4dc5ec5117b502/c/0/c03239475.png"
+    },
+    {
+      "id": "49",
+      "category": "Mouse",
+      "name": "Dell MS116",
+      "size": 1000,
+      "features": [
+        "Simple design",
+        "Wired"
+      ],
+      "price": 6.99,
+      "image": "https://maxcom.uz/storage/product/jF1s4TJzS58rWBdgG4VYaxOiFQkxp309n2m3yMng.jpeg"
+    },
+    {
+      "id": "14",
+      "category": "Keyboard",
+      "name": "Logitech G915 TKL",
+      "size": "Mechanical",
+      "switches": "Low-profile GL Tactile",
+      "features": [
+        "Wireless",
+        "RGB lighting"
+      ],
+      "price": 229.99,
+      "image": "https://maxcom.uz/storage/product/lJsV1uiWniTMGOmX9WCEzzAvBrxppnPPcFDH7Lsb.jpeg"
+    },
+    {
+      "id": "5",
+      "category": "Keyboard",
+      "name": "Razer BlackWidow V4 Pro",
+      "size": "Mechanical",
+      "switches": "Razer Green",
+      "features": [
+        "Per-key RGB",
+        "Magnetic wrist rest"
+      ],
+      "price": 229.99,
+      "image": "https://m.media-amazon.com/images/I/71T2O0O7DhL._AC_SL1500_.jpg"
+    },
+    {
+      "id": "9",
+      "category": "Keyboard",
+      "name": "SteelSeries Apex Pro",
+      "size": "Mechanical",
+      "switches": "OmniPoint Adjustable",
+      "features": [
+        "Per-key RGB",
+        "OLED Smart Display"
+      ],
+      "price": 199.99,
+      "image": "https://files.ox-sys.com/cache/800x_/image/7b/52/28/7b5228162be9cb677278d053a4e307bd5db1009bea11d4119242f4ee95c58d80.jpg"
+    },
+    {
+      "id": "1",
+      "category": "Keyboard",
+      "name": "Corsair K95 RGB Platinum",
+      "size": "Mechanical",
+      "switches": "Cherry MX Speed",
+      "features": [
+        "RGB lighting",
+        "Macro keys",
+        "Aluminum frame"
+      ],
+      "price": 199.99,
+      "image": "https://olcha.uz/image/original/products/2021-11-13/klaviatura-corsair-k95-rgb-platinum-cherry-mx-speed-ru-27086-0.jpeg"
+    },
+    {
+      "id": "24",
+      "category": "Keyboard",
+      "name": "Cooler Master CK552",
+      "size": "Mechanical",
+      "switches": "Gateron Red",
+      "features": [
+        "RGB lighting",
+        "Aluminum design"
+      ],
+      "price": 89.99,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF2nVF-jkHIYEA7My7_zhWrJMjK2BnYhk8lg&s"
+    },
+    {
+      "id": "16",
+      "category": "Keyboard",
+      "name": "HyperX Alloy FPS Pro",
+      "size": "Mechanical",
+      "switches": "Cherry MX Red",
+      "features": [
+        "Compact design",
+        "Backlit keys"
+      ],
+      "price": 79.99,
+      "image": "https://tovar.uz/images/company/444/tovar/77636/o_61b336ed9273c.jpg"
+    },
+    {
+      "id": "20",
+      "category": "Keyboard",
+      "name": "Razer Cynosa V2",
+      "size": "Membrane",
+      "features": [
+        "RGB lighting",
+        "Quiet typing"
+      ],
+      "price": 59.99,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0aac3k5EqntfO-9DdZC-IZdU9_-_DAl8FsA&s"
+    },
+    {
+      "id": "28",
+      "category": "Keyboard",
+      "name": "Logitech G213 Prodigy",
+      "size": "Membrane",
+      "features": [
+        "RGB lighting",
+        "Spill-resistant"
+      ],
+      "price": 49.99,
+      "image": "https://maxcom.uz/storage/product/vKq0liCyMnIzdRorSjQPI5jNjZXYhxxeLcBrGwLG.png"
+    },
+    {
+      "id": "32",
+      "category": "Keyboard",
+      "name": "Redragon K552 Kumara",
+      "size": "Mechanical",
+      "switches": "Outemu Blue",
+      "features": [
+        "Compact design",
+        "RGB lighting"
+      ],
+      "price": 49.99,
+      "image": "https://cdn.mediapark.uz/imgs/2b4b93db-abc5-47bb-abc8-e181648fb683_Artboard-1.webp"
+    },
+    {
+      "id": "44",
+      "category": "Keyboard",
+      "name": "Microsoft Wired Keyboard 600",
+      "size": "Membrane",
+      "features": [
+        "Quiet keys",
+        "Media keys"
+      ],
+      "price": 19.99,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKj-cL7EersS6C8lfJ2JmJ017V3og-BMdkpA&s"
+    },
+    {
+      "id": "36",
+      "category": "Keyboard",
+      "name": "Dell KB216",
+      "size": "Membrane",
+      "features": [
+        "Basic design",
+        "Wired"
+      ],
+      "price": 14.99,
+      "image": "https://mini-io-api.texnomart.uz/catalog/product/1025/102523/180217/4d831418-0189-409e-854e-0634a355e012.jpg"
+    },
+    {
+      "id": "40",
+      "category": "Keyboard",
+      "name": "Logitech K120",
+      "size": "Membrane",
+      "features": [
+        "Spill-resistant",
+        "Affordable"
+      ],
+      "price": 12.99,
+      "image": "https://cdn.mediapark.uz/imgs/c4178e07-5256-4691-a1b3-a54a1b5b6fc1_Artboard1-1300.webp"
+    },
+    {
+      "id": "48",
+      "category": "Keyboard",
+      "name": "HP 100 Wired Keyboard",
+      "size": "Membrane",
+      "features": [
+        "Durable keys",
+        "Compact design"
+      ],
+      "price": 10.99,
+      "image": "https://pcmarket.uz/wp-content/uploads/2022/11/s-l500.png"
+    }
+  ]
+}

@@ -1,4 +1,3 @@
-
 import { useEffect, useRef } from "react";
 import * as THREE from 'three';
 import { BloomEffect, EffectComposer, EffectPass, RenderPass, SMAAEffect, SMAAPreset } from 'postprocessing';
@@ -75,7 +74,7 @@ const Hyperspeed = ({ effectOptions = {
     const distortions = {
       mountainDistortion: {
         uniforms: mountainUniforms,
-        getDistortion: 
+        getDistortion: `
           uniform vec3 uAmp;
           uniform vec3 uFreq;
           #define PI 3.14159265358979
@@ -90,7 +89,7 @@ const Hyperspeed = ({ effectOptions = {
               nsin(progress * PI * uFreq.z + uTime) * uAmp.z - nsin(movementProgressFix * PI * uFreq.z + uTime) * uAmp.z
             );
           }
-        ,
+        `,
         getJS: (progress, time) => {
           let movementProgressFix = 0.02;
           let uFreq = mountainUniforms.uFreq.value;
@@ -111,9 +110,7 @@ const Hyperspeed = ({ effectOptions = {
       xyDistortion: {
         uniforms: xyUniforms,
         getDistortion: `
-
-Абдуазим, [30.01.2025 20:53]
-uniform vec2 uFreq;
+          uniform vec2 uFreq;
           uniform vec2 uAmp;
           #define PI 3.14159265358979
           vec3 getDistortion(float progress){
@@ -124,7 +121,7 @@ uniform vec2 uFreq;
               0.
             );
           }
-        ,
+        `,
         getJS: (progress, time) => {
           let movementProgressFix = 0.02;
           let uFreq = xyUniforms.uFreq.value;
@@ -143,7 +140,7 @@ uniform vec2 uFreq;
       },
       LongRaceDistortion: {
         uniforms: LongRaceUniforms,
-        getDistortion: 
+        getDistortion: `
           uniform vec2 uFreq;
           uniform vec2 uAmp;
           #define PI 3.14159265358979
@@ -155,7 +152,7 @@ uniform vec2 uFreq;
               0.
             );
           }
-        ,
+        `,
         getJS: (progress, time) => {
           let camProgress = 0.0125;
           let uFreq = LongRaceUniforms.uFreq.value;
@@ -174,7 +171,7 @@ uniform vec2 uFreq;
       },
       turbulentDistortion: {
         uniforms: turbulentUniforms,
-        getDistortion: 
+        getDistortion: `
           uniform vec4 uFreq;
           uniform vec4 uAmp;
           float nsin(float val){
@@ -209,8 +206,7 @@ uniform vec2 uFreq;
             Math.cos(Math.PI * p * uFreq.x + time) * uAmp.x +
             Math.pow(Math.cos(Math.PI * p * uFreq.y + time * (uFreq.y / uFreq.x)), 2) * uAmp.y;
 
-Абдуазим, [30.01.2025 20:53]
-const getY = p =>
+          const getY = p =>
             -nsin(Math.PI * p * uFreq.z + time) * uAmp.z -
             Math.pow(nsin(Math.PI * p * uFreq.w + time / (uFreq.z / uFreq.w)), 5) * uAmp.w;
 
@@ -226,7 +222,7 @@ const getY = p =>
       },
       turbulentDistortionStill: {
         uniforms: turbulentUniforms,
-        getDistortion: 
+        getDistortion: `
           uniform vec4 uFreq;
           uniform vec4 uAmp;
           float nsin(float val){
@@ -252,11 +248,11 @@ const getY = p =>
               0.
             );
           }
-        
+        `
       },
       deepDistortionStill: {
         uniforms: deepUniforms,
-        getDistortion: 
+        getDistortion: `
           uniform vec4 uFreq;
           uniform vec4 uAmp;
           uniform vec2 uPowY;
@@ -281,11 +277,11 @@ const getY = p =>
               0.
             );
           }
-        
+        `
       },
       deepDistortion: {
         uniforms: deepUniforms,
-        getDistortion: 
+        getDistortion: `
           uniform vec4 uFreq;
           uniform vec4 uAmp;
           uniform vec2 uPowY;
@@ -310,7 +306,7 @@ const getY = p =>
               0.
             );
           }
-        ,
+        `,
         getJS: (progress, time) => {
           const uFreq = deepUniforms.uFreq.value;
           const uAmp = deepUniforms.uAmp.value;
@@ -322,9 +318,7 @@ const getY = p =>
             Math.sin(p * Math.PI * uFreq.y + time) * uAmp.y;
 
           let distortion = new THREE.Vector3(
-
-Абдуазим, [30.01.2025 20:53]
-getX(progress) - getX(progress + 0.01),
+            getX(progress) - getX(progress + 0.01),
             getY(progress) - getY(progress + 0.01),
             0
           );
@@ -450,8 +444,7 @@ getX(progress) - getX(progress + 0.01),
             manager.itemEnd("smaa-search");
           });
 
-Абдуазим, [30.01.2025 20:53]
-areaImage.addEventListener("load", function () {
+          areaImage.addEventListener("load", function () {
             assets.smaa.area = this;
             manager.itemEnd("smaa-area");
           });
@@ -578,9 +571,7 @@ areaImage.addEventListener("load", function () {
 
     const distortion_vertex = `
       #define PI 3.14159265358979
-
-Абдуазим, [30.01.2025 20:53]
-uniform vec2 uDistortionX;
+      uniform vec2 uDistortionX;
       uniform vec2 uDistortionY;
       float nsin(float val){
         return sin(val) * 0.5 + 0.5;
@@ -705,8 +696,7 @@ uniform vec2 uDistortionX;
           new THREE.InstancedBufferAttribute(new Float32Array(aColor), 3, false)
         );
 
-Абдуазим, [30.01.2025 20:53]
-let material = new THREE.ShaderMaterial({
+        let material = new THREE.ShaderMaterial({
           fragmentShader: carLightsFragment,
           vertexShader: carLightsVertex,
           transparent: true,
@@ -739,7 +729,7 @@ let material = new THREE.ShaderMaterial({
       }
     }
 
-    const carLightsFragment = 
+    const carLightsFragment = `
       #define USE_FOG;
       ${THREE.ShaderChunk["fog_pars_fragment"]}
       varying vec3 vColor;
@@ -752,9 +742,9 @@ let material = new THREE.ShaderMaterial({
         if (gl_FragColor.a < 0.0001) discard;
         ${THREE.ShaderChunk["fog_fragment"]}
       }
-    ;
+    `;
 
-    const carLightsVertex = 
+    const carLightsVertex = `
       #define USE_FOG;
       ${THREE.ShaderChunk["fog_pars_vertex"]}
       attribute vec3 aOffset;
@@ -786,7 +776,7 @@ let material = new THREE.ShaderMaterial({
         vColor = aColor;
         ${THREE.ShaderChunk["fog_vertex"]}
       }
-    ;
+    `;
 
     class LightsSticks {
       constructor(webgl, options) {
@@ -831,9 +821,7 @@ let material = new THREE.ShaderMaterial({
           "aOffset",
           new THREE.InstancedBufferAttribute(new Float32Array(aOffset), 1, false)
         );
-
-Абдуазим, [30.01.2025 20:53]
-instanced.setAttribute(
+        instanced.setAttribute(
           "aColor",
           new THREE.InstancedBufferAttribute(new Float32Array(aColor), 3, false)
         );
@@ -874,7 +862,7 @@ instanced.setAttribute(
       }
     }
 
-    const sideSticksVertex = 
+    const sideSticksVertex = `
       #define USE_FOG;
       ${THREE.ShaderChunk["fog_pars_vertex"]}
       attribute float aOffset;
@@ -884,10 +872,10 @@ instanced.setAttribute(
       uniform float uTime;
       varying vec3 vColor;
       mat4 rotationY( in float angle ) {
-        return mat4( cos(angle),  0,  sin(angle), 0,
-                     0,  1.0,    0, 0,
-                -sin(angle), 0,  cos(angle), 0,
-                0,   0,    0, 1);
+        return mat4(	cos(angle),		0,		sin(angle),	0,
+                     0,		1.0,			 0,	0,
+                -sin(angle),	0,		cos(angle),	0,
+                0, 		0,				0,	1);
       }
       #include <getDistortion_vertex>
       void main(){
@@ -912,9 +900,9 @@ instanced.setAttribute(
         vColor = aColor;
         ${THREE.ShaderChunk["fog_vertex"]}
       }
-    ;
+    `;
 
-    const sideSticksFragment = 
+    const sideSticksFragment = `
       #define USE_FOG;
       ${THREE.ShaderChunk["fog_pars_fragment"]}
       varying vec3 vColor;
@@ -923,7 +911,7 @@ instanced.setAttribute(
         gl_FragColor = vec4(color,1.);
         ${THREE.ShaderChunk["fog_fragment"]}
       }
-    ;
+    `;
 
     class Road {
       constructor(webgl, options) {
@@ -958,8 +946,7 @@ instanced.setAttribute(
           });
         }
 
-Абдуазим, [30.01.2025 20:53]
-const material = new THREE.ShaderMaterial({
+        const material = new THREE.ShaderMaterial({
           fragmentShader: isRoad ? roadFragment : islandFragment,
           vertexShader: roadVertex,
           side: THREE.DoubleSide,
@@ -998,7 +985,7 @@ const material = new THREE.ShaderMaterial({
       }
     }
 
-    const roadBaseFragment = 
+    const roadBaseFragment = `
       #define USE_FOG;
       varying vec2 vUv; 
       uniform vec3 uColor;
@@ -1012,13 +999,13 @@ const material = new THREE.ShaderMaterial({
         gl_FragColor = vec4(color, 1.);
         ${THREE.ShaderChunk["fog_fragment"]}
       }
-    ;
+    `;
 
     const islandFragment = roadBaseFragment
       .replace("#include <roadMarkings_fragment>", "")
       .replace("#include <roadMarkings_vars>", "");
 
-    const roadMarkings_vars = 
+    const roadMarkings_vars = `
       uniform float uLanes;
       uniform vec3 uBrokenLinesColor;
       uniform vec3 uShoulderLinesColor;
@@ -1033,9 +1020,9 @@ const material = new THREE.ShaderMaterial({
         highp float sn = mod(dt, 3.14);
         return fract(sin(sn) * c);
       }
-    ;
+    `;
 
-    const roadMarkings_fragment = 
+    const roadMarkings_fragment = `
       uv.y = mod(uv.y + uTime * 0.05, 1.);  // Adjust speed of markings
       float laneWidth = 1.0 / uLanes;
       float brokenLineWidth = laneWidth * uBrokenLinesWidthPercentage;
@@ -1050,7 +1037,7 @@ const material = new THREE.ShaderMaterial({
       // vec2 noiseFreq = vec2(4., 7000.);
       // float roadNoise = random(floor(uv * noiseFreq) / noiseFreq) * 0.02 - 0.01; 
       // color += roadNoise;
-    ;
+    `;
 
     const roadFragment = roadBaseFragment
       .replace("#include <roadMarkings_fragment>", roadMarkings_fragment)
@@ -1067,9 +1054,7 @@ const material = new THREE.ShaderMaterial({
         vec3 transformed = position.xyz;
         vec3 distortion = getDistortion((transformed.y + uTravelLength / 2.) / uTravelLength);
         transformed.x += distortion.x;
-
-Абдуазим, [30.01.2025 20:53]
-transformed.z += distortion.y;
+        transformed.z += distortion.y;
         transformed.y += -1. * distortion.z;  
         
         vec4 mvPosition = modelViewMatrix * vec4(transformed, 1.);

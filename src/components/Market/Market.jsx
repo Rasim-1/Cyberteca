@@ -1,14 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import { Navigation, Pagination } from "swiper/modules";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import { Navigation } from "swiper/modules";
 import s from "./Market.module.scss";
 
 const Market = () => {
   const [products, setProducts] = useState([]);
-  const [cart, setCart] = useState([]); // Корзина
+  const [cart, setCart] = useState({});
   const [startIndexes, setStartIndexes] = useState({});
   const slidesPerView = 4;
 
@@ -37,24 +35,67 @@ const Market = () => {
   };
 
   const handleNext = (categoryName, categoryProducts) => {
-    setStartIndexes((prevIndexes) => ({
-      ...prevIndexes,
+    setStartIndexes((prev) => ({
+      ...prev,
       [categoryName]: Math.min(
-        prevIndexes[categoryName] + 1,
+        prev[categoryName] + 1,
         categoryProducts.length - slidesPerView
       ),
     }));
   };
 
   const handlePrev = (categoryName) => {
-    setStartIndexes((prevIndexes) => ({
-      ...prevIndexes,
-      [categoryName]: Math.max(prevIndexes[categoryName] - 1, 0),
+    setStartIndexes((prev) => ({
+      ...prev,
+      [categoryName]: Math.max(prev[categoryName] - 1, 0),
     }));
   };
 
   const addToCart = (product) => {
-    setCart((prevCart) => [...prevCart, product]);
+    setCart((prevCart) => ({
+      ...prevCart,
+      [product.id]: prevCart[product.id]
+        ? { ...prevCart[product.id], quantity: prevCart[product.id].quantity + 1 }
+        : { ...product, quantity: 1 },
+    }));
+  };
+
+  const removeFromCart = (productId) => {
+    setCart((prevCart) => {
+      const newCart = { ...prevCart };
+      delete newCart[productId];
+      return newCart;
+    });
+  };
+
+  const increaseQuantity = (productId) => {
+    setCart((prevCart) => ({
+      ...prevCart,
+      [productId]: { ...prevCart[productId], quantity: prevCart[productId].quantity + 1 },
+    }));
+  };
+
+  const decreaseQuantity = (productId) => {
+    setCart((prevCart) => {
+      if (prevCart[productId].quantity > 1) {
+        return {
+          ...prevCart,
+          [productId]: { ...prevCart[productId], quantity: prevCart[productId].quantity - 1 },
+        };
+      } else {
+        const newCart = { ...prevCart };
+        delete newCart[productId];
+        return newCart;
+      }
+    });
+  };
+
+  const clearCart = () => {
+    setCart({});
+  };
+
+  const getTotalPrice = () => {
+    return Object.values(cart).reduce((total, item) => total + item.price * item.quantity, 0).toFixed(2);
   };
 
   return (
@@ -81,63 +122,31 @@ const Market = () => {
                       &lt;
                     </button>
                     <button
-                      onClick={() =>
-                        handleNext(category.name, categoryProducts)
-                      }
-                      disabled={
-                        (startIndexes[category.name] || 0) + slidesPerView >=
-                        categoryProducts.length
-                      }
+                      onClick={() => handleNext(category.name, categoryProducts)}
+                      disabled={(startIndexes[category.name] || 0) + slidesPerView >= categoryProducts.length}
                       className={s.rightArrow}
                     >
                       &gt;
                     </button>
                   </div>
                 </div>
-                <Swiper
-                  modules={[Navigation, Pagination]}
-                  spaceBetween={20}
-                  slidesPerView={slidesPerView}
-                  pagination={{ clickable: true }}
-                  className={s.swiper}
-                  breakpoints={{
-                    1400: { slidesPerView: 3 }, // При ширине 1400px — 3 карточки
-                    1000: { slidesPerView: 2 }, // При ширине 1000px — 2 карточки
-                    600: { slidesPerView: 1 },  // При ширине 600px — 1 карточка
-                  }}
-                >
+                <Swiper modules={[Navigation]} spaceBetween={20} slidesPerView={slidesPerView} className={s.swiper}>
                   {visibleProducts.map((product) => (
-                    <SwiperSlide
-                      key={product.id}
-                      data-aos="fade-left"
-                      className={`${s.card} ${s.animate}`}
-                    >
+                    <SwiperSlide key={product.id} className={s.card}>
                       <img src={product.image} alt={product.name} />
                       <div className={s.text__content}>
                         <h2>{product.name}</h2>
                         <h3>{product.size}</h3>
                         <h4>{product.features}</h4>
-                        {/* Блок цены и корзины */}
                       </div>
                       <div className={s.priceandcart}>
                         <div className={s.cards}>
-                          <s>{(product.price * 1.1).toFixed(2)}</s>{" "}
-                          {/* Зачеркнутая цена */}
-                          <p>{product.price}</p> {/* Обычная цена */}
+                          <s>{(product.price * 1.1).toFixed(2)}</s> {/* Строчная цена со скидкой */}
+                          <p>{product.price}₽</p> {/* Обычная цена */}
                         </div>
-
-                        <div>
-                          <button
-                            onClick={() => addToCart(product)}
-                            className={s.addToCartButton}
-                          >
-                            <img
-                              className={s.korzina}
-                              src="/korzina.png"
-                              alt="Add to Cart"
-                            />
-                          </button>
-                        </div>
+                        <button onClick={() => addToCart(product)} className={s.addToCartButton}>
+                          <img className={s.korzina} src="/korzina.png" alt="Add to Cart" />
+                        </button>
                       </div>
                     </SwiperSlide>
                   ))}
@@ -146,19 +155,32 @@ const Market = () => {
             );
           })}
         </div>
-        {/* Корзина */}
+
         <div className={s.cart}>
           <h2>Корзина</h2>
-          {cart.length === 0 ? (
+          {Object.keys(cart).length === 0 ? (
             <p>Корзина пуста</p>
           ) : (
-            <ul>
-              {cart.map((item, index) => (
-                <li key={index}>
-                  {item.name} - {item.price}
-                </li>
-              ))}
-            </ul>
+            <>
+              <ul>
+                {Object.values(cart).map((item) => (
+                  <li key={item.id}>
+                    <div className={s.cartDetails}>
+                      <img src={item.image} alt={item.name} />
+                      <span>{item.name}</span>
+                    </div>
+                    <div className={s.cartActions}>
+                      <button onClick={() => decreaseQuantity(item.id)} className={s.decreaseQuantity}>-</button>
+                      <span className={s.quantity}>{item.quantity}</span>
+                      <button onClick={() => increaseQuantity(item.id)} className={s.increaseQuantity}>+</button>
+                      <button onClick={() => removeFromCart(item.id)} className={s.removeItem}>X</button>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+              <h3 className={s.btnitog}>Итого: {getTotalPrice()}₽</h3>
+              <button onClick={clearCart} className={s.clearCartButton}>Очистить корзину</button>
+            </>
           )}
         </div>
       </div>

@@ -20,6 +20,7 @@ import ZonaSinglePage3 from './pages/ZonaSinglePage3';
 import ZonaSinglePage4 from './pages/ZonaSinglePage4';
 import ZonaSinglePage5 from './pages/ZonaSinglePage5';
 import ZonaSinglePage1 from './pages/ZonaSinglePage1';
+import Admin from './pages/Admin';
 
 const App = () => {
   const [showChoisePage, setShowChoisePage] = useState(true);
@@ -44,7 +45,7 @@ const App = () => {
   useEffect(() => {
     const handleVisibilityChange = () => {
       if (document.hidden) {
-        document.title = "Вернитесь к нам!";
+        document.title = "Вернитесь к нам! 😢";
       } else {
         document.title = "Кибертека"; // Можно заменить на любое другое название
       }
@@ -86,6 +87,7 @@ const App = () => {
                 <Route path="/" element={<ChoisePage onChoice={handleChoice} />} />
                 <Route path="/stranica1page" element={<Stranica1Page />} />
                 <Route path="/stranica2page" element={<Stranica2Page />} />
+                <Route path="/admin" element={<Admin />} />
                 <Route path="/zonapage" element={<ZonaPage />} />
                 <Route path="/zonapage2" element={<ZonaPage2 />} />
                 <Route path="/marketpage" element={<MarketPage />} />
