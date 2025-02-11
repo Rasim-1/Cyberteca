@@ -2,12 +2,15 @@ import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Navigation } from "swiper/modules";
+import { ToastContainer, toast } from "react-toastify"; // Import Toastify components
+import "react-toastify/dist/ReactToastify.css"; // Import CSS for Toastify
 import s from "./Market.module.scss";
 
 const Market = () => {
   const [products, setProducts] = useState([]);
   const [cart, setCart] = useState({});
   const [startIndexes, setStartIndexes] = useState({});
+
   const slidesPerView = 4;
 
   const [categories, setCategories] = useState([
@@ -58,6 +61,8 @@ const Market = () => {
         ? { ...prevCart[product.id], quantity: prevCart[product.id].quantity + 1 }
         : { ...product, quantity: 1 },
     }));
+
+    toast.success(`${product.name} добавлен в корзину`); // Show toast message when item is added
   };
 
   const removeFromCart = (productId) => {
@@ -94,8 +99,19 @@ const Market = () => {
     setCart({});
   };
 
+  const buyAll = () => {
+    if (Object.keys(cart).length === 0) {
+      toast.error("Корзина пуста!");
+      return;
+    }
+    toast.success("Покупка совершена!");
+    setCart({});
+  };
+
   const getTotalPrice = () => {
-    return Object.values(cart).reduce((total, item) => total + item.price * item.quantity, 0).toFixed(2);
+    return Object.values(cart)
+      .reduce((total, item) => total + item.price * item.quantity, 0)
+      .toFixed(2);
   };
 
   return (
@@ -130,7 +146,17 @@ const Market = () => {
                     </button>
                   </div>
                 </div>
-                <Swiper modules={[Navigation]} spaceBetween={20} slidesPerView={slidesPerView} className={s.swiper}>
+                <Swiper
+                  modules={[Navigation]}
+                  spaceBetween={20}
+                  slidesPerView={4}
+                  breakpoints={{
+                    1200: { slidesPerView: 3 },
+                    800: { slidesPerView: 2 },
+                    500: { slidesPerView: 1 },
+                  }}
+                  className={s.swiper}
+                >
                   {visibleProducts.map((product) => (
                     <SwiperSlide key={product.id} className={s.card}>
                       <img src={product.image} alt={product.name} />
@@ -141,8 +167,8 @@ const Market = () => {
                       </div>
                       <div className={s.priceandcart}>
                         <div className={s.cards}>
-                          <s>{(product.price * 1.1).toFixed(2)}</s> {/* Строчная цена со скидкой */}
-                          <p>{product.price}₽</p> {/* Обычная цена */}
+                          <s className={s.card__s}>{(product.price * 1.1).toFixed(2)}</s>
+                          <p>{product.price}₽</p>
                         </div>
                         <button onClick={() => addToCart(product)} className={s.addToCartButton}>
                           <img className={s.korzina} src="/korzina.png" alt="Add to Cart" />
@@ -179,10 +205,15 @@ const Market = () => {
                 ))}
               </ul>
               <h3 className={s.btnitog}>Итого: {getTotalPrice()}₽</h3>
-              <button onClick={clearCart} className={s.clearCartButton}>Очистить корзину</button>
+              <div className={s.cartButtons}>
+                <button onClick={clearCart} className={s.clearCartButton}>Очистить корзину</button>
+                <button onClick={buyAll} className={s.buyAllButton}>Купить все</button>
+              </div>
             </>
           )}
         </div>
+
+        <ToastContainer />
       </div>
     </section>
   );

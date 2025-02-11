@@ -3,6 +3,7 @@ import Choice from '../components/Choice/Choice';
 import Hyperspeed from '../components/Hyperspeed/Hyperspeed';
 
 
+
 const ChoisePage = ({ onChoice }) => {
   return (
     <>

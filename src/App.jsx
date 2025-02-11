@@ -21,11 +21,14 @@ import ZonaSinglePage4 from './pages/ZonaSinglePage4';
 import ZonaSinglePage5 from './pages/ZonaSinglePage5';
 import ZonaSinglePage1 from './pages/ZonaSinglePage1';
 import Admin from './pages/Admin';
+import Pinkod from './pages/Pinkod';
+
 
 const App = () => {
   const [showChoisePage, setShowChoisePage] = useState(true);
   const [loading, setLoading] = useState(true);
   const [isModalVisible, setIsModalVisible] = useState(false);
+  const [isAuthenticated, setIsAuthenticated] = useState(false); // Добавлено
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -47,7 +50,7 @@ const App = () => {
       if (document.hidden) {
         document.title = "Вернитесь к нам! 😢";
       } else {
-        document.title = "Кибертека"; // Можно заменить на любое другое название
+        document.title = "Кибертека";
       }
     };
 
@@ -87,7 +90,7 @@ const App = () => {
                 <Route path="/" element={<ChoisePage onChoice={handleChoice} />} />
                 <Route path="/stranica1page" element={<Stranica1Page />} />
                 <Route path="/stranica2page" element={<Stranica2Page />} />
-                <Route path="/admin" element={<Admin />} />
+                <Route path="/admin" element={isAuthenticated ? <Admin /> : <Pinkod onUnlock={() => setIsAuthenticated(true)} />} />
                 <Route path="/zonapage" element={<ZonaPage />} />
                 <Route path="/zonapage2" element={<ZonaPage2 />} />
                 <Route path="/marketpage" element={<MarketPage />} />

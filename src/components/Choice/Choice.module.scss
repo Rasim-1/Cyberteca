@@ -112,7 +112,7 @@ height: 100dvh;
   color: white;
   background-color: transparent;
   transition: 1s;
-
+cursor: pointer;
   &:hover {
     background-color: #e73ab8;
     box-shadow: 0 0 20px 0 #e73ab8;
@@ -165,7 +165,7 @@ height: 100dvh;
   background-color: transparent;
   transition: 1s;
   margin-bottom: 30px;
-
+cursor: pointer;
   &:hover {
     background-color: #149ef2;
     box-shadow: 0 0 20px 0 #149ef2;
@@ -181,7 +181,7 @@ height: 100dvh;
   background-color: white;
   border: 1px solid white;
  text-decoration: none;  
-
+cursor: pointer;
   &:hover {
     animation: changeBorderColor 5s infinite;
     transition: 1s;

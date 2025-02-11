@@ -4,7 +4,6 @@ import Zone from '../components/Zone/Zone';
 import Slider from '../components/Slider/Slider';
 import Bronya from '../components/Bronya/Bronya';
 import MyWork from '../components/MyWork/MyWork';
-import Scroll from '../components/Scroll/Scroll';
 
 const Stranica1Page = () => {
   const bronyaRef = useRef(null);

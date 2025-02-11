@@ -1,21 +1,6 @@
 {
   "product": [
     {
-      "id": "13",
-      "category": "Monitor",
-      "name": "Acer Predator X35",
-      "size": "35 inches",
-      "resolution": "3440x1440",
-      "refresh_rate": "200Hz",
-      "features": [
-        "G-Sync Ultimate",
-        "HDR1000",
-        "Curve"
-      ],
-      "price": 2999.99,
-      "image": "https://m.media-amazon.com/images/I/71xWi4zl8WL.jpg "
-    },
-    {
       "id": "7",
       "category": "Monitor",
       "name": "Samsung Odyssey Neo G8",
@@ -156,38 +141,6 @@
       ],
       "price": 79.99,
       "image": "https://www.viewsonic.com/media/catalog/product/cache/2072e83f2e881a73b096e3b7091900a2/v/a/va1903h_front_hires.png"
-    },
-    {
-      "id": "38",
-      "category": "Monitor",
-      "name": "HP V194",
-      "size": "18.5 inches",
-      "resolution": "1366x768",
-      "refresh_rate": "60Hz",
-      "features": [
-        "Basic display",
-        "TN panel"
-      ],
-      "price": 79.99,
-      "image": "https://m.media-amazon.com/images/I/31g3cvyeN9L._AC_UF894,1000_QL80_.jpg"
-    },
-    {
-      "id": "4",
-      "category": "PCBlock",
-      "name": "Custom Gaming PC",
-      "size": "Intel Core i9-13900K",
-      "resolution": "NVIDIA RTX 4090",
-      "ram": "64GB DDR5",
-      "storage": [
-        "2TB NVMe SSD",
-        "4TB HDD"
-      ],
-      "features": [
-        "Liquid cooling",
-        "ARGB case"
-      ],
-      "price": 4999.99,
-      "image": "https://nzxt.com/assets/cms/34299/1699518219-gaming-pc-game-your-way-prebuilt-pc-primary-krakene-lg.png?auto=format&fit=max&h=900&w=672"
     },
     {
       "id": "8",
@@ -544,18 +497,6 @@
       "image": "https://in-media.apjonlinecdn.com/catalog/product/cache/b3b166914d87ce343d4dc5ec5117b502/c/0/c03239475.png"
     },
     {
-      "id": "49",
-      "category": "Mouse",
-      "name": "Dell MS116",
-      "size": 1000,
-      "features": [
-        "Simple design",
-        "Wired"
-      ],
-      "price": 6.99,
-      "image": "https://maxcom.uz/storage/product/jF1s4TJzS58rWBdgG4VYaxOiFQkxp309n2m3yMng.jpeg"
-    },
-    {
       "id": "14",
       "category": "Keyboard",
       "name": "Logitech G915 TKL",
@@ -718,6 +659,18 @@
       ],
       "price": 10.99,
       "image": "https://pcmarket.uz/wp-content/uploads/2022/11/s-l500.png"
+    },
+    {
+      "id": "49",
+      "category": "Mouse",
+      "name": "Dell MS116",
+      "size": 1000,
+      "features": [
+        "Simple design",
+        "Wired"
+      ],
+      "price": 6.99,
+      "image": "https://maxcom.uz/storage/product/jF1s4TJzS58rWBdgG4VYaxOiFQkxp309n2m3yMng.jpeg"
     }
   ]
 }
